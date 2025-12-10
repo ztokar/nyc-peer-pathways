@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +13,8 @@ const Header = () => {
     { href: "/about", label: "About Us" },
     { href: "/services", label: "Services" },
     { href: "/jobs", label: "Jobs" },
+    { href: "/faqs", label: "FAQs" },
+    { href: "/resources", label: "Resources" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -28,7 +30,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -45,7 +47,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <a href="tel:1212-470-7439" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone className="h-4 w-4" />
               (212) 470-7439
@@ -57,7 +59,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -67,7 +69,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="lg:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link

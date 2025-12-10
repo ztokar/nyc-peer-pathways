@@ -1,33 +1,35 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Briefcase, CheckCircle, MapPin, Clock, Heart } from "lucide-react";
+import { Briefcase, CheckCircle, MapPin, Clock, Heart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import teamRooftop from "@/assets/team-rooftop.png";
+import peerMeeting from "@/assets/peer-meeting.png";
 
 const whatWeOffer = [
-  "Steady work across all 5 boroughs",
-  "Supportive team",
-  "Flexible schedules",
-  "Professional growth",
-  "Competitive pay based on experience and budget",
+  "Community-based field work",
+  "Supportive work culture",
+  "Flexible scheduling",
+  "Meaningful impact",
+  "Competitive pay based on experience",
 ];
 
 const whoWereLookingFor = [
-  "Certified as Peer Specialists (NYC or NYS)",
-  "Reliable and compassionate",
+  "Certified Peer Specialists (NYS)",
+  "Adults 18+",
   "Comfortable sharing lived experience",
-  "Ready to support others",
-  "Able to work in the community",
+  "Reliable with strong boundaries",
+  "Ready to travel within NYC",
+  "Compassionate and grounded",
 ];
 
 const jobIncludes = [
-  "1:1 support",
-  "Community and field work",
+  "Meeting peers in the community",
+  "1:1 recovery support",
+  "Group support facilitation",
+  "Daily life navigation",
   "Documentation",
-  "Team meetings",
-  "Helping people reach their goals",
+  "Real connection and mentorship",
 ];
 
 const JobsPage = () => {
@@ -37,20 +39,20 @@ const JobsPage = () => {
         <title>Peer Support Specialist Jobs NYC | Rise2Growth Careers</title>
         <meta 
           name="description" 
-          content="Join Rise2Growth as a certified peer support specialist. We're hiring across all 5 NYC boroughs. Fair pay, supportive team, flexible schedules." 
+          content="Join our network of certified peer specialists. We place peers in community-based roles where your story becomes someone else's hope." 
         />
         <meta 
           name="keywords" 
           content="peer support specialist job nyc, peer specialist jobs nyc, certified peer support specialist jobs, peer specialist jobs near me, peer recovery specialist jobs, certified peer specialist NYC" 
         />
-        <link rel="canonical" href="https://rise2growth.com/jobs" />
+        <link rel="canonical" href="https://rise2growth.org/jobs" />
         
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "JobPosting",
             "title": "Certified Peer Support Specialist",
-            "description": "Join our team of certified peer support specialists in NYC",
+            "description": "Join our network of certified peer specialists in NYC. Community-based roles where your story becomes someone else's hope.",
             "hiringOrganization": {
               "@type": "Organization",
               "name": "Rise2Growth"
@@ -82,10 +84,10 @@ const JobsPage = () => {
                   Jobs at <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Join our team of certified peer support specialists.</strong>
+                  <strong>Join our network of certified peer specialists.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  We hire NYC peers who want to make a real difference.
+                  We place peers in community-based roles where your story becomes someone else's hope.
                 </p>
               </div>
             </div>
@@ -131,8 +133,8 @@ const JobsPage = () => {
                 
                 <div>
                   <img 
-                    src={teamRooftop} 
-                    alt="Rise2Growth team"
+                    src={peerMeeting} 
+                    alt="Rise2Growth peer specialist meeting"
                     className="w-full rounded-2xl shadow-xl"
                   />
                 </div>
@@ -168,7 +170,7 @@ const JobsPage = () => {
                   Why Work With Us
                 </h2>
                 <p className="text-xl text-muted-foreground mb-4">
-                  You get to use your story to support someone else's healing.
+                  Your story becomes someone else's hope.
                 </p>
                 <p className="text-lg text-foreground font-medium">
                   Your experience matters here.
@@ -201,9 +203,14 @@ const JobsPage = () => {
                     </div>
                   </div>
                   
-                  <Button size="lg" asChild>
-                    <Link to="/contact">Apply Today</Link>
-                  </Button>
+                  <div className="flex flex-wrap gap-4">
+                    <Button size="lg" asChild>
+                      <Link to="/contact">Apply Today</Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild>
+                      <Link to="/faqs">View FAQs</Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,13 +223,18 @@ const JobsPage = () => {
                 Apply Today
               </h2>
               <p className="text-xl opacity-90 mb-8">
-                Send us your info.
+                Send your resume and the areas you can work in.
                 <br />
-                We'd love to meet you.
+                We'll reach out soon.
               </p>
-              <Button size="lg" variant="secondary" asChild>
-                <Link to="/contact">Contact Us to Apply</Link>
-              </Button>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Button size="lg" variant="secondary" asChild>
+                  <Link to="/contact">Contact Us to Apply</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                  <Link to="/resources">View More Positions</Link>
+                </Button>
+              </div>
             </div>
           </section>
         </main>

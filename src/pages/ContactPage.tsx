@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,13 +15,13 @@ const ContactPage = () => {
         <title>Contact Us | Rise2Growth - Peer Support Services NYC</title>
         <meta 
           name="description" 
-          content="Contact Rise2Growth for peer support services in NYC. Reach out for support or job opportunities. We serve all 5 NYC boroughs." 
+          content="Contact Rise2Growth for peer support services in NYC. We support New Yorkers every day. Reach out and we'll get back to you soon." 
         />
         <meta 
           name="keywords" 
           content="contact Rise2Growth, peer support NYC contact, peer specialist jobs contact, mental health support NYC" 
         />
-        <link rel="canonical" href="https://rise2growth.com/contact" />
+        <link rel="canonical" href="https://rise2growth.org/contact" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -35,9 +36,9 @@ const ContactPage = () => {
                   Contact <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We're here to support you.</strong>
+                  <strong>We support New Yorkers every day.</strong>
                   <br />
-                  Reach out anytime.
+                  Reach out and we'll get back to you soon.
                 </p>
               </div>
             </div>
@@ -54,17 +55,6 @@ const ContactPage = () => {
                   </h2>
                   
                   <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-lg bg-primary/10">
-                        <MapPin className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-foreground">Rise2Growth</p>
-                        <p className="text-muted-foreground">Spring Valley, NY</p>
-                        <p className="text-muted-foreground">Serving all 5 NYC boroughs</p>
-                      </div>
-                    </div>
-                    
                     <div className="flex items-start gap-4">
                       <div className="p-3 rounded-lg bg-primary/10">
                         <Phone className="h-6 w-6 text-primary" />
@@ -101,8 +91,20 @@ const ContactPage = () => {
                     </div>
                   </div>
 
+                  {/* Get Support */}
+                  <div className="mt-12 p-6 bg-primary/10 rounded-xl">
+                    <h3 className="text-lg font-display font-bold text-foreground mb-4">
+                      Get Support
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Tell us your borough and what you need.
+                      <br />
+                      We'll help you get started.
+                    </p>
+                  </div>
+
                   {/* For Peer Specialists */}
-                  <div className="mt-12 p-6 bg-secondary/20 rounded-xl">
+                  <div className="mt-6 p-6 bg-secondary/20 rounded-xl">
                     <div className="flex items-start gap-3 mb-4">
                       <Briefcase className="h-6 w-6 text-secondary flex-shrink-0" />
                       <h3 className="text-lg font-display font-bold text-foreground">
@@ -110,17 +112,18 @@ const ContactPage = () => {
                       </h3>
                     </div>
                     <p className="text-muted-foreground">
-                      Have questions about jobs?
-                      <br />
-                      Email us your resume and the boroughs you can work in.
+                      Email us your resume and the NYC areas you can work in.
                     </p>
+                    <Link to="/faqs" className="text-primary hover:underline inline-block mt-2">
+                      Learn More →
+                    </Link>
                   </div>
                 </div>
 
                 {/* Contact Form */}
                 <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
                   <h2 className="text-2xl font-display font-bold text-foreground mb-2">
-                    Get Support
+                    Send Us a Message
                   </h2>
                   <p className="text-muted-foreground mb-8">
                     Tell us what you're looking for.

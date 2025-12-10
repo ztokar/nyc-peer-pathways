@@ -1,49 +1,48 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Heart, Shield, Star, Users, Smile, MessageCircle } from "lucide-react";
+import { CheckCircle, Heart, MapPin, Users, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import peerSession from "@/assets/peer-session.png";
+import teamSupport from "@/assets/team-support.png";
 
-const values = [
-  { icon: Heart, label: "Respect" },
-  { icon: Shield, label: "Trust" },
-  { icon: Star, label: "Hope" },
-  { icon: Users, label: "Recovery" },
-  { icon: Smile, label: "Community" },
-  { icon: MessageCircle, label: "Empathy" },
+const whatMakesUsDifferent = [
+  "We value your lived experience",
+  "Flexible, community-based placements",
+  "Supportive work environment",
+  "Competitive pay",
+  "Real mentorship and growth",
 ];
 
-const teamBrings = [
-  "Lived experience",
-  "NYC community knowledge",
-  "Training and certification",
-  "Real compassion",
-  "Judgment-free support",
+const howWeSupport = [
+  "Mental health recovery",
+  "Housing resources",
+  "Community programs",
+  "Daily responsibilities",
+  "City services",
 ];
 
 const promises = [
-  "We walk with you.",
+  "We show up.",
   "We listen.",
-  "We support your goals.",
-  "We believe in your growth.",
+  "We walk with you.",
+  "Your goals become our goals.",
 ];
 
 const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Rise2Growth - Peer-Run Mental Health Support NYC</title>
+        <title>About Us | Rise2Growth - Peer Support Staffing Agency NYC</title>
         <meta 
           name="description" 
-          content="Rise2Growth is a peer-run mental health support organization serving all five NYC boroughs. Built on lived experience, trust, and community." 
+          content="Rise2Growth is a staffing agency connecting certified peer specialists with New Yorkers who need support. We place peers in community-based roles where lived experience becomes real impact." 
         />
         <meta 
           name="keywords" 
-          content="peer-run organization NYC, mental health support, lived experience, peer support NYC, recovery support organization" 
+          content="peer support staffing agency NYC, mental health support, lived experience, peer support NYC, recovery support organization" 
         />
-        <link rel="canonical" href="https://rise2growth.com/about" />
+        <link rel="canonical" href="https://rise2growth.org/about" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -58,45 +57,43 @@ const AboutPage = () => {
                   About <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Rise2Growth is built on lived experience, trust, and community.</strong>
+                  <strong>Rise2Growth is a staffing agency connecting certified peer specialists with New Yorkers who need support.</strong>
+                </p>
+                <p className="text-muted-foreground mt-4">
+                  We place peers in community-based roles where lived experience becomes real impact.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Who We Are */}
+          {/* Mission & Why We Exist */}
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                 <div>
-                  <p className="text-lg text-muted-foreground mb-6">
-                    We are a <strong>peer-run mental health support organization</strong> serving all five NYC boroughs.
-                  </p>
-                  <p className="text-muted-foreground mb-8">
-                    Our team uses their own recovery stories to support others on their journey.
-                  </p>
-
                   <h2 className="text-2xl font-display font-bold text-foreground mb-4">
                     Our Mission
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    To help people feel seen, heard, and supported through peer-to-peer connection.
+                    To help New Yorkers feel seen, supported, and empowered through authentic peer connection.
                   </p>
 
                   <h2 className="text-2xl font-display font-bold text-foreground mb-4">
                     Why We Exist
                   </h2>
                   <p className="text-muted-foreground">
-                    Many people struggle alone.
+                    NYC moves fast.
                     <br />
-                    We believe support feels different when it's from someone who understands.
+                    People fall through the cracks.
+                    <br />
+                    Peer specialists help make sure no one faces it alone.
                   </p>
                 </div>
                 
                 <div>
                   <img 
-                    src={peerSession} 
-                    alt="Rise2Growth peer support session"
+                    src={teamSupport} 
+                    alt="Rise2Growth peer support team"
                     className="w-full rounded-2xl shadow-xl"
                   />
                 </div>
@@ -104,59 +101,66 @@ const AboutPage = () => {
             </div>
           </section>
 
-          {/* Values */}
+          {/* What Makes Us Different (For Job Seekers) */}
           <section className="py-16 bg-muted">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
-                  Our Values
-                </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-                  {values.map(({ icon: Icon, label }) => (
-                    <div key={label} className="bg-card rounded-xl p-6 text-center shadow-sm border border-border">
-                      <Icon className="h-8 w-8 text-primary mx-auto mb-3" />
-                      <span className="font-medium text-foreground">{label}</span>
-                    </div>
-                  ))}
+                <div className="flex items-center gap-3 mb-6">
+                  <Briefcase className="h-8 w-8 text-primary" />
+                  <h2 className="text-3xl font-display font-bold text-foreground">
+                    What Makes Us Different (For Job Seekers)
+                  </h2>
                 </div>
+                <ul className="space-y-4">
+                  {whatMakesUsDifferent.map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
+                      <span className="text-lg text-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </section>
 
-          {/* Our Team */}
+          {/* How We Support New Yorkers */}
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-                  Our Team
-                </h2>
-                <p className="text-muted-foreground mb-8">Our peers bring:</p>
-                <ul className="space-y-3 mb-12">
-                  {teamBrings.map((item) => (
+                <div className="flex items-center gap-3 mb-6">
+                  <MapPin className="h-8 w-8 text-secondary" />
+                  <h2 className="text-3xl font-display font-bold text-foreground">
+                    How We Support New Yorkers
+                  </h2>
+                </div>
+                <p className="text-muted-foreground mb-8">We help people navigate:</p>
+                <ul className="space-y-3">
+                  {howWeSupport.map((item) => (
                     <li key={item} className="flex items-center gap-3">
-                      <div className="h-2 w-2 rounded-full bg-primary flex-shrink-0" />
+                      <div className="h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                       <span className="text-foreground">{item}</span>
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </section>
 
-                <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-                  Who We Serve
-                </h2>
-                <p className="text-muted-foreground mb-12">
-                  Adults across NYC who want support, connection, and a path toward recovery.
-                </p>
-
-                <div className="bg-primary/10 rounded-2xl p-8">
-                  <h2 className="text-2xl font-display font-bold text-foreground mb-6">
+          {/* Our Promise */}
+          <section className="py-16 bg-primary/10">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center gap-3 mb-6">
+                  <Heart className="h-8 w-8 text-primary" />
+                  <h2 className="text-3xl font-display font-bold text-foreground">
                     Our Promise
                   </h2>
-                  <ul className="space-y-2">
-                    {promises.map((item) => (
-                      <li key={item} className="text-lg text-foreground">{item}</li>
-                    ))}
-                  </ul>
                 </div>
+                <ul className="space-y-3">
+                  {promises.map((item) => (
+                    <li key={item} className="text-xl text-foreground">{item}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </section>
@@ -165,7 +169,7 @@ const AboutPage = () => {
           <section className="py-16 bg-secondary text-secondary-foreground">
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl font-display font-bold mb-6">
-                Ready to Connect?
+                See What You Can Help With
               </h2>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="outline" className="bg-background text-foreground hover:bg-background/90" asChild>

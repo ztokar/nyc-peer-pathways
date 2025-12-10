@@ -8,6 +8,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import JobsPage from "./pages/JobsPage";
+import FAQsPage from "./pages/FAQsPage";
+import ResourcesPage from "./pages/ResourcesPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +27,8 @@ const App = () => (
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/jobs" element={<JobsPage />} />
+            <Route path="/faqs" element={<FAQsPage />} />
+            <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
