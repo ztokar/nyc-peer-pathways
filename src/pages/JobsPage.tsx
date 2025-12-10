@@ -1,21 +1,21 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Briefcase, CheckCircle, MapPin, Clock, Heart, Users } from "lucide-react";
+import { Briefcase, CheckCircle, MapPin, Clock, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import peerMeeting from "@/assets/peer-meeting.png";
 
 const whatWeOffer = [
-  "Community-based field work",
-  "Supportive work culture",
-  "Flexible scheduling",
-  "Meaningful impact",
-  "Competitive pay based on experience",
+  { text: "Community-based field work", description: "— real connection, not desk work" },
+  { text: "Supportive team culture", description: "— you'll have backup" },
+  { text: "Flexible scheduling", description: "— work that fits your life" },
+  { text: "Meaningful impact", description: "— your story becomes someone else's hope" },
+  { text: "Competitive pay", description: "— based on your experience" },
 ];
 
 const whoWereLookingFor = [
-  "Certified Peer Specialists (NYS)",
+  "Certified Peer Specialists (NYS) — required",
   "Adults 18+",
   "Comfortable sharing lived experience",
   "Reliable with strong boundaries",
@@ -39,7 +39,7 @@ const JobsPage = () => {
         <title>Peer Support Specialist Jobs NYC | Rise2Growth Careers</title>
         <meta 
           name="description" 
-          content="Join our network of certified peer specialists. We place peers in community-based roles where your story becomes someone else's hope." 
+          content="We're hiring certified peer specialists across NYC. If you're NYS certified and looking for meaningful community-based work, let's talk." 
         />
         <meta 
           name="keywords" 
@@ -52,7 +52,7 @@ const JobsPage = () => {
             "@context": "https://schema.org",
             "@type": "JobPosting",
             "title": "Certified Peer Support Specialist",
-            "description": "Join our network of certified peer specialists in NYC. Community-based roles where your story becomes someone else's hope.",
+            "description": "We're hiring certified peer specialists across NYC. Community-based roles where your story becomes someone else's hope.",
             "hiringOrganization": {
               "@type": "Organization",
               "name": "Rise2Growth"
@@ -84,10 +84,10 @@ const JobsPage = () => {
                   Jobs at <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Join our network of certified peer specialists.</strong>
+                  <strong>We're hiring certified peer specialists across NYC.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  We place peers in community-based roles where your story becomes someone else's hope.
+                  If you're NYS certified and looking for meaningful community-based work, let's talk.
                 </p>
               </div>
             </div>
@@ -102,9 +102,11 @@ const JobsPage = () => {
                 </h2>
                 <ul className="space-y-4">
                   {whatWeOffer.map((item) => (
-                    <li key={item} className="flex items-center gap-3">
-                      <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
-                      <span className="text-lg text-foreground">{item}</span>
+                    <li key={item.text} className="flex items-start gap-3">
+                      <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-lg text-foreground">
+                        <strong>{item.text}</strong> {item.description}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -169,11 +171,14 @@ const JobsPage = () => {
                 <h2 className="text-3xl font-display font-bold text-foreground mb-6">
                   Why Work With Us
                 </h2>
-                <p className="text-xl text-muted-foreground mb-4">
-                  Your story becomes someone else's hope.
+                <p className="text-xl text-muted-foreground mb-2">
+                  Your story has power.
                 </p>
-                <p className="text-lg text-foreground font-medium">
+                <p className="text-xl text-muted-foreground mb-2">
                   Your experience matters here.
+                </p>
+                <p className="text-lg text-foreground font-medium mt-4">
+                  You'll be supported while you support others.
                 </p>
               </div>
             </div>
@@ -205,10 +210,10 @@ const JobsPage = () => {
                   
                   <div className="flex flex-wrap gap-4">
                     <Button size="lg" asChild>
-                      <Link to="/contact">Apply Today</Link>
+                      <Link to="/contact">Apply Now</Link>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
-                      <Link to="/faqs">View FAQs</Link>
+                      <Link to="/faqs">Read FAQs</Link>
                     </Button>
                   </div>
                 </div>
@@ -229,10 +234,10 @@ const JobsPage = () => {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
-                  <Link to="/contact">Contact Us to Apply</Link>
+                  <Link to="/contact">Apply Now</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                  <Link to="/resources">View More Positions</Link>
+                  <Link to="/faqs">Read FAQs</Link>
                 </Button>
               </div>
             </div>

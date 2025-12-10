@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
@@ -38,10 +38,6 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-white mb-4">Contact Us</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-white/70">
-                <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>15 Perlman Dr<br />Spring Valley, NY 10977</span>
-              </li>
               <li className="flex items-center gap-2 text-white/70">
                 <Phone className="h-5 w-5" />
                 <a href="tel:1212-470-7439" className="hover:text-primary transition-colors">(212) 470-7439</a>

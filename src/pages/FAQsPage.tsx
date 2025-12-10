@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "What if I just got certified?",
-    answer: "That's great. We welcome newly certified peers and provide mentorship as you build experience.",
+    answer: "Perfect. We welcome newly certified peers and provide mentorship as you build experience.",
   },
   {
     question: "Where will I work?",
@@ -26,11 +26,11 @@ const faqs = [
   },
   {
     question: "How many hours per week?",
-    answer: "It depends on the role and your availability. Most positions range from 10–20 hours per week, but we offer flexibility.",
+    answer: "It depends on the role and your availability. Most positions range from 10–20 hours per week, with flexibility.",
   },
   {
     question: "Do I need a car?",
-    answer: "Not required, but helpful. Many peers use public transit to meet clients throughout the city.",
+    answer: "Not required, but helpful. Many of our peer specialists use public transit to meet clients throughout the city.",
   },
   {
     question: "What's the pay?",
@@ -42,11 +42,15 @@ const faqs = [
   },
   {
     question: "How do I apply?",
-    answer: "Email your resume and the boroughs/areas you can work in. We'll reach out to schedule a conversation.",
+    answer: "Email your resume and the boroughs/areas you can work in to info@rise2growth.org. We'll reach out to schedule a conversation.",
   },
   {
     question: "What makes Rise2Growth different from other agencies?",
     answer: "We're peer-focused. We understand the work because many of us have lived it. You're not just a number here — you're part of a community.",
+  },
+  {
+    question: "What if I have more questions?",
+    answer: "Reach out. We're happy to talk through anything you're wondering about.",
   },
 ];
 
@@ -57,7 +61,7 @@ const FAQsPage = () => {
         <title>FAQs | Rise2Growth - Peer Specialist Jobs NYC</title>
         <meta 
           name="description" 
-          content="Questions about becoming a peer specialist with Rise2Growth? We've got answers. Learn about certification requirements, pay, hours, and more." 
+          content="Questions about working as a peer specialist with Rise2Growth? Here's what you need to know about certification, pay, hours, and more." 
         />
         <meta 
           name="keywords" 
@@ -79,9 +83,9 @@ const FAQsPage = () => {
                   <span className="text-primary">FAQs</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Questions about becoming a peer specialist with Rise2Growth?</strong>
+                  <strong>Questions about working as a peer specialist with Rise2Growth?</strong>
                   <br />
-                  We've got answers.
+                  Here's what you need to know.
                 </p>
               </div>
             </div>
@@ -115,14 +119,14 @@ const FAQsPage = () => {
           <section className="py-16 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl font-display font-bold mb-6">
-                Ready to Get Started?
+                Ready to Apply?
               </h2>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
-                  <Link to="/jobs">View Open Positions</Link>
+                  <Link to="/contact">Apply Now</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                  <Link to="/resources">Check Certification Resources</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>
