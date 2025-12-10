@@ -21,7 +21,7 @@ const ResourcesPage = () => {
         <title>Resources | Rise2Growth - Peer Specialist Certification NYC</title>
         <meta 
           name="description" 
-          content="Everything you need to know about becoming a peer specialist in NYC. Certification resources, training programs, and NYC-specific mental health resources." 
+          content="Everything you need to know about becoming a peer specialist in NYC. Whether you're exploring certification or already certified and job-hunting, here's what you need." 
         />
         <meta 
           name="keywords" 
@@ -44,6 +44,9 @@ const ResourcesPage = () => {
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   <strong>Everything you need to know about becoming a peer specialist in NYC.</strong>
+                </p>
+                <p className="text-muted-foreground mt-4">
+                  Whether you're exploring certification or already certified and job-hunting, here's what you need.
                 </p>
               </div>
             </div>
@@ -211,9 +214,10 @@ const ResourcesPage = () => {
                 <h2 className="text-3xl font-display font-bold text-foreground mb-6">
                   Why Become a Peer Specialist?
                 </h2>
-                <p className="text-xl text-muted-foreground mb-4">
+                <p className="text-xl text-muted-foreground mb-2">
                   Your story has power.
-                  <br />
+                </p>
+                <p className="text-xl text-muted-foreground mb-4">
                   Your recovery can light the way for someone else.
                 </p>
                 <p className="text-lg text-foreground">
@@ -227,10 +231,10 @@ const ResourcesPage = () => {
           <section className="py-16 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl font-display font-bold mb-4">
-                Ready to Start?
+                Ready to Start Working?
               </h2>
               <p className="text-xl opacity-90 mb-8">
-                If you're certified and ready to work, we'd love to hear from you.
+                If you're certified and ready to join a team that values what you bring, we'd love to hear from you.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>

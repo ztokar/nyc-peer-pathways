@@ -1,19 +1,19 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Users, Heart, Target, Navigation, CheckCircle, Clock } from "lucide-react";
+import { Users, Heart, Target, CheckCircle, Clock, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import communityWork from "@/assets/community-work.png";
 
 const howItWorks = [
-  "Paired with a dedicated peer specialist",
-  "Sessions match individual needs (10–20 hours a week)",
+  "You're paired with individuals who need support",
+  "Sessions match their needs (10–20 hours a week)",
   "Support happens in the community — subways, appointments, parks, wherever help is needed",
-  "We move at their pace",
+  "You move at their pace",
 ];
 
-const keyBenefits = [
+const whatYoullProvide = [
   "Guidance from someone who has lived it",
   "Help with goals and daily routines",
   "Navigation of NYC systems",
@@ -21,7 +21,7 @@ const keyBenefits = [
   "Real connection, not clinical pressure",
 ];
 
-const whatWeHelpWith = [
+const whatYoullHelpWith = [
   "Recovery steps",
   "Housing and benefits navigation",
   "Appointments and community programs",
@@ -34,14 +34,14 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Rise2Growth - Peer Support Services NYC</title>
+        <title>The Work You'll Do | Rise2Growth - Peer Support Services NYC</title>
         <meta 
           name="description" 
-          content="Peer support built for New Yorkers. Flexible, real, and grounded in lived experience. Adult peer support services meeting people where they are." 
+          content="As a peer specialist with Rise2Growth, you'll provide flexible, real support grounded in lived experience. Meet people where they are across NYC." 
         />
         <meta 
           name="keywords" 
-          content="peer support services NYC, 1:1 peer support, mental health services, recovery support, community-based support NYC" 
+          content="peer support services NYC, 1:1 peer support, peer specialist job duties, community-based support NYC" 
         />
         <link rel="canonical" href="https://rise2growth.org/services" />
       </Helmet>
@@ -55,15 +55,15 @@ const ServicesPage = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-                  Our <span className="text-primary">Services</span>
+                  The Work <span className="text-primary">You'll Do</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Peer support built for New Yorkers.</strong>
+                  <strong>The work you'll do as a peer specialist.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  Flexible, real, and grounded in lived experience.
+                  Our peer specialists provide flexible, real support grounded in lived experience.
                   <br />
-                  Our services meet people where they are — at home, in the community, or anywhere they need support.
+                  You'll meet people where they are — at home, in the community, or anywhere they need help.
                 </p>
               </div>
             </div>
@@ -96,14 +96,14 @@ const ServicesPage = () => {
                   </ul>
                 </div>
 
-                {/* Key Benefits */}
+                {/* What You'll Provide */}
                 <div className="mb-12">
                   <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                     <Heart className="h-5 w-5 text-primary" />
-                    Key Benefits
+                    What You'll Provide
                   </h3>
                   <ul className="space-y-3">
-                    {keyBenefits.map((item) => (
+                    {whatYoullProvide.map((item) => (
                       <li key={item} className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                         <span className="text-foreground">{item}</span>
@@ -115,7 +115,7 @@ const ServicesPage = () => {
             </div>
           </section>
 
-          {/* Image + What We Help With */}
+          {/* Image + What You'll Help With */}
           <section className="py-16 bg-muted">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -130,10 +130,10 @@ const ServicesPage = () => {
                 <div>
                   <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                     <Target className="h-6 w-6 text-secondary" />
-                    What We Help With
+                    What You'll Help With
                   </h3>
                   <ul className="space-y-3">
-                    {whatWeHelpWith.map((item) => (
+                    {whatYoullHelpWith.map((item) => (
                       <li key={item} className="flex items-center gap-3">
                         <div className="h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                         <span className="text-foreground">{item}</span>
@@ -141,26 +141,31 @@ const ServicesPage = () => {
                     ))}
                   </ul>
                   <p className="text-muted-foreground mt-6">
-                    Peer support helps reduce isolation and builds confidence for independence.
+                    Your work helps reduce isolation and builds confidence for independence.
                   </p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* CTA */}
+          {/* This Could Be You CTA */}
           <section className="py-16 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
-              <Navigation className="h-10 w-10 mx-auto mb-4 opacity-80" />
+              <Briefcase className="h-10 w-10 mx-auto mb-4 opacity-80" />
               <h2 className="text-3xl font-display font-bold mb-4">
-                Learn More About Our Approach
+                This Could Be You
               </h2>
               <p className="text-xl opacity-90 mb-8 max-w-xl mx-auto">
-                Reach out today to learn how peer support can help.
+                If you're certified and ready to use your experience to help others, we want to hear from you.
               </p>
-              <Button size="lg" variant="secondary" asChild>
-                <Link to="/contact">Contact Us</Link>
-              </Button>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Button size="lg" variant="secondary" asChild>
+                  <Link to="/jobs">Apply for Open Positions</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                  <Link to="/about">Learn More About the Role</Link>
+                </Button>
+              </div>
             </div>
           </section>
         </main>

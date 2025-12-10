@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Briefcase } from "lucide-react";
+import { Phone, Mail, Clock, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,14 +12,14 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Rise2Growth - Peer Support Services NYC</title>
+        <title>Contact Us | Rise2Growth - Apply for Peer Specialist Jobs NYC</title>
         <meta 
           name="description" 
-          content="Contact Rise2Growth for peer support services in NYC. We support New Yorkers every day. Reach out and we'll get back to you soon." 
+          content="Ready to join our team? Contact Rise2Growth to apply for peer specialist positions in NYC. We'll get back to you within 2 business days." 
         />
         <meta 
           name="keywords" 
-          content="contact Rise2Growth, peer support NYC contact, peer specialist jobs contact, mental health support NYC" 
+          content="contact Rise2Growth, peer specialist jobs contact, apply peer specialist NYC, peer support jobs application" 
         />
         <link rel="canonical" href="https://rise2growth.org/contact" />
       </Helmet>
@@ -36,9 +36,9 @@ const ContactPage = () => {
                   Contact <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We support New Yorkers every day.</strong>
+                  <strong>Ready to join our team?</strong>
                   <br />
-                  Reach out and we'll get back to you soon.
+                  We'd love to hear from you.
                 </p>
               </div>
             </div>
@@ -91,31 +91,36 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  {/* Get Support */}
-                  <div className="mt-12 p-6 bg-primary/10 rounded-xl">
-                    <h3 className="text-lg font-display font-bold text-foreground mb-4">
-                      Get Support
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Tell us your borough and what you need.
-                      <br />
-                      We'll help you get started.
-                    </p>
-                  </div>
-
                   {/* For Peer Specialists */}
-                  <div className="mt-6 p-6 bg-secondary/20 rounded-xl">
+                  <div className="mt-12 p-6 bg-secondary/20 rounded-xl">
                     <div className="flex items-start gap-3 mb-4">
                       <Briefcase className="h-6 w-6 text-secondary flex-shrink-0" />
                       <h3 className="text-lg font-display font-bold text-foreground">
                         For Peer Specialists
                       </h3>
                     </div>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground mb-4">
                       Email us your resume and the NYC areas you can work in.
+                      <br />
+                      We'll get back to you within 2 business days.
                     </p>
-                    <Link to="/faqs" className="text-primary hover:underline inline-block mt-2">
-                      Learn More →
+                    <div className="flex flex-wrap gap-3">
+                      <Link to="/faqs" className="text-primary hover:underline">
+                        Have Questions? Check FAQs →
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Learn About Certification */}
+                  <div className="mt-6 p-6 bg-primary/10 rounded-xl">
+                    <h3 className="text-lg font-display font-bold text-foreground mb-4">
+                      Not Certified Yet?
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Learn about how to become a certified peer specialist in NYC.
+                    </p>
+                    <Link to="/resources" className="text-primary hover:underline">
+                      Learn About Certification →
                     </Link>
                   </div>
                 </div>
@@ -126,7 +131,7 @@ const ContactPage = () => {
                     Send Us a Message
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    Tell us what you're looking for.
+                    Tell us about yourself.
                     <br />
                     We'll respond as soon as possible.
                   </p>
@@ -160,9 +165,9 @@ const ContactPage = () => {
                         className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground"
                       >
                         <option value="">Select an option</option>
-                        <option value="support">I'm looking for peer support</option>
                         <option value="job">I want to apply for a job</option>
-                        <option value="info">I have questions</option>
+                        <option value="info">I have questions about working here</option>
+                        <option value="certification">I have questions about certification</option>
                         <option value="other">Other</option>
                       </select>
                     </div>
@@ -171,7 +176,7 @@ const ContactPage = () => {
                       <Label htmlFor="message">Message</Label>
                       <Textarea 
                         id="message" 
-                        placeholder="Tell us more about what you're looking for..."
+                        placeholder="Tell us about yourself and the NYC areas you can work in..."
                         rows={4}
                       />
                     </div>
