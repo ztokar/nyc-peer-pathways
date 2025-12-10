@@ -53,7 +53,7 @@ const Header = () => {
               (212) 470-7439
             </a>
             <Button asChild>
-              <Link to="/contact">Get Support</Link>
+              <Link to="/contact">Apply Now</Link>
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ const Header = () => {
                   (212) 470-7439
                 </a>
                 <Button asChild className="w-full">
-                  <Link to="/contact">Get Support</Link>
+                  <Link to="/contact">Apply Now</Link>
                 </Button>
               </div>
             </nav>

@@ -240,7 +240,7 @@ const ResourcesPage = () => {
                 <Button size="lg" variant="secondary" asChild>
                   <Link to="/contact">Apply Now</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <Button size="lg" variant="secondary" asChild>
                   <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
