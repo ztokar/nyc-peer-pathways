@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <img src={logo} alt="Rise2Growth" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="Rise2Growth" className="h-12 w-auto mb-4" />
             <p className="text-white/70 mb-4 max-w-md">
-              Rise2Growth connects individuals with certified peer support specialists across NYC. We believe in the power of lived experience to guide, support, and inspire growth.
+              Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.
             </p>
             <div className="flex gap-4">
               <a href="tel:1212-470-7439" className="flex items-center gap-2 text-white/70 hover:text-primary transition-colors">
@@ -24,10 +25,12 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-white/70 hover:text-primary transition-colors">Services</a></li>
-              <li><a href="#about" className="text-white/70 hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#careers" className="text-white/70 hover:text-primary transition-colors">Careers</a></li>
-              <li><a href="#contact" className="text-white/70 hover:text-primary transition-colors">Contact</a></li>
+              <li><Link to="/services" className="text-white/70 hover:text-primary transition-colors">Services</Link></li>
+              <li><Link to="/about" className="text-white/70 hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link to="/jobs" className="text-white/70 hover:text-primary transition-colors">Jobs</Link></li>
+              <li><Link to="/faqs" className="text-white/70 hover:text-primary transition-colors">FAQs</Link></li>
+              <li><Link to="/resources" className="text-white/70 hover:text-primary transition-colors">Resources</Link></li>
+              <li><Link to="/contact" className="text-white/70 hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -45,7 +48,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-white/70">
                 <Mail className="h-5 w-5" />
-                <a href="mailto:info@rise2growth.com" className="hover:text-primary transition-colors">info@rise2growth.com</a>
+                <a href="mailto:info@rise2growth.org" className="hover:text-primary transition-colors">info@rise2growth.org</a>
               </li>
             </ul>
           </div>
