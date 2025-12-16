@@ -99,7 +99,7 @@ const AboutPage = () => {
                   <img 
                     src={teamSupport} 
                     alt="Rise2Growth peer support team"
-                    className="w-full rounded-2xl shadow-xl"
+                    className="w-full rounded-2xl shadow-xl clip-watermark"
                   />
                 </div>
               </div>

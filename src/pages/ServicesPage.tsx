@@ -123,7 +123,7 @@ const ServicesPage = () => {
                   <img 
                     src={communityWork} 
                     alt="Rise2Growth community support in NYC"
-                    className="w-full rounded-2xl shadow-xl"
+                    className="w-full rounded-2xl shadow-xl clip-watermark"
                   />
                 </div>
                 

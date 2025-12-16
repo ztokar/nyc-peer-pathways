@@ -137,7 +137,7 @@ const JobsPage = () => {
                   <img 
                     src={peerMeeting} 
                     alt="Rise2Growth peer specialist meeting"
-                    className="w-full rounded-2xl shadow-xl"
+                    className="w-full rounded-2xl shadow-xl clip-watermark"
                   />
                 </div>
               </div>
