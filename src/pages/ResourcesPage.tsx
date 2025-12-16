@@ -27,7 +27,7 @@ const ResourcesPage = () => {
           name="keywords" 
           content="peer specialist certification NYC, how to become peer specialist, NYS peer certification, peer support training NYC" 
         />
-        <link rel="canonical" href="https://rise2growth.org/resources" />
+        <link rel="canonical" href="https://rise2growth.com/resources" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

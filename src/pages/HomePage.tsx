@@ -49,7 +49,7 @@ const HomePage = () => {
           name="keywords" 
           content="peer support specialist job nyc, peer specialist jobs nyc, certified peer support specialist jobs, peer specialist jobs near me, peer recovery specialist jobs, certified peer specialist NYC" 
         />
-        <link rel="canonical" href="https://rise2growth.org" />
+        <link rel="canonical" href="https://rise2growth.com" />
         
         <meta property="og:title" content="Peer Support Specialist Jobs NYC | Rise2Growth" />
         <meta property="og:description" content="Use your story to help New Yorkers navigate real life. We're hiring certified peer specialists." />

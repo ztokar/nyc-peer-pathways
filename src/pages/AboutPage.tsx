@@ -7,11 +7,11 @@ import Footer from "@/components/Footer";
 import teamSupport from "@/assets/team-support.png";
 
 const whatMakesUsDifferent = [
-  { text: "We value your lived experience", description: "— it's not a side note, it's your superpower" },
-  { text: "Flexible placements", description: "— community-based work that fits your life" },
-  { text: "Supportive culture", description: "— you're not alone in this work" },
-  { text: "Competitive pay", description: "— based on your experience" },
-  { text: "Real growth", description: "— mentorship and opportunities to develop" },
+  { text: "We value your lived experience", description: ": it's not a side note, it's your superpower" },
+  { text: "Flexible placements", description: ": community-based work that fits your life" },
+  { text: "Supportive culture", description: ": you're not alone in this work" },
+  { text: "Competitive pay", description: ": based on your experience" },
+  { text: "Real growth", description: ": mentorship and opportunities to develop" },
 ];
 
 const whatYoullHelpWith = [
@@ -42,7 +42,7 @@ const AboutPage = () => {
           name="keywords" 
           content="peer support staffing agency NYC, peer specialist jobs, lived experience, peer support NYC, recovery support organization" 
         />
-        <link rel="canonical" href="https://rise2growth.org/about" />
+        <link rel="canonical" href="https://rise2growth.com/about" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -60,7 +60,7 @@ const AboutPage = () => {
                   <strong>We're a staffing agency built for peer specialists.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  We connect certified peers with New Yorkers who need support — and we create careers where lived experience becomes real impact.
+                  We connect certified peers with New Yorkers who need support, and we create careers where lived experience becomes real impact.
                 </p>
               </div>
             </div>
