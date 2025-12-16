@@ -8,8 +8,8 @@ import communityWork from "@/assets/community-work.png";
 
 const howItWorks = [
   "You're paired with individuals who need support",
-  "Sessions match their needs (10–20 hours a week)",
-  "Support happens in the community — subways, appointments, parks, wherever help is needed",
+  "Sessions match their needs (10-20 hours a week)",
+  "Support happens in the community: subways, appointments, parks, wherever help is needed",
   "You move at their pace",
 ];
 
@@ -43,7 +43,7 @@ const ServicesPage = () => {
           name="keywords" 
           content="peer support services NYC, 1:1 peer support, peer specialist job duties, community-based support NYC" 
         />
-        <link rel="canonical" href="https://rise2growth.org/services" />
+        <link rel="canonical" href="https://rise2growth.com/services" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

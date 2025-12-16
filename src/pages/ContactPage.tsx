@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Phone, Mail, Clock, Briefcase } from "lucide-react";
@@ -5,10 +6,41 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const ContactPage = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    reason: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const subject = encodeURIComponent(`Contact from ${formData.firstName} ${formData.lastName}: ${formData.reason || "General Inquiry"}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone || "Not provided"}\nReason: ${formData.reason || "Not specified"}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:info@rise2growth.com?subject=${subject}&body=${body}`;
+    
+    toast({
+      title: "Opening email client",
+      description: "Your message details have been prepared. Please send the email to complete your inquiry.",
+    });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
   return (
     <>
       <Helmet>
@@ -21,7 +53,7 @@ const ContactPage = () => {
           name="keywords" 
           content="contact Rise2Growth, peer specialist jobs contact, apply peer specialist NYC, peer support jobs application" 
         />
-        <link rel="canonical" href="https://rise2growth.org/contact" />
+        <link rel="canonical" href="https://rise2growth.com/contact" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -73,8 +105,8 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <p className="font-medium text-foreground">Email</p>
-                        <a href="mailto:info@rise2growth.org" className="text-primary hover:underline">
-                          info@rise2growth.org
+                        <a href="mailto:info@rise2growth.com" className="text-primary hover:underline">
+                          info@rise2growth.com
                         </a>
                       </div>
                     </div>
@@ -136,26 +168,51 @@ const ContactPage = () => {
                     We'll respond as soon as possible.
                   </p>
                   
-                  <form className="space-y-6">
+                  <form className="space-y-6" onSubmit={handleSubmit}>
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">First Name</Label>
-                        <Input id="firstName" placeholder="Your first name" />
+                        <Input 
+                          id="firstName" 
+                          placeholder="Your first name" 
+                          value={formData.firstName}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName">Last Name</Label>
-                        <Input id="lastName" placeholder="Your last name" />
+                        <Input 
+                          id="lastName" 
+                          placeholder="Your last name"
+                          value={formData.lastName}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="your@email.com" />
+                      <Input 
+                        id="email" 
+                        type="email" 
+                        placeholder="your@email.com"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
                     
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone (optional)</Label>
-                      <Input id="phone" type="tel" placeholder="(555) 123-4567" />
+                      <Input 
+                        id="phone" 
+                        type="tel" 
+                        placeholder="(555) 123-4567"
+                        value={formData.phone}
+                        onChange={handleChange}
+                      />
                     </div>
                     
                     <div className="space-y-2">
@@ -163,12 +220,14 @@ const ContactPage = () => {
                       <select 
                         id="reason" 
                         className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground"
+                        value={formData.reason}
+                        onChange={handleChange}
                       >
                         <option value="">Select an option</option>
-                        <option value="job">I want to apply for a job</option>
-                        <option value="info">I have questions about working here</option>
-                        <option value="certification">I have questions about certification</option>
-                        <option value="other">Other</option>
+                        <option value="I want to apply for a job">I want to apply for a job</option>
+                        <option value="I have questions about working here">I have questions about working here</option>
+                        <option value="I have questions about certification">I have questions about certification</option>
+                        <option value="Other">Other</option>
                       </select>
                     </div>
                     
@@ -178,6 +237,9 @@ const ContactPage = () => {
                         id="message" 
                         placeholder="Tell us about yourself and the NYC areas you can work in..."
                         rows={4}
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
                       />
                     </div>
                     

@@ -7,15 +7,15 @@ import Footer from "@/components/Footer";
 import peerMeeting from "@/assets/peer-meeting.png";
 
 const whatWeOffer = [
-  { text: "Community-based field work", description: "— real connection, not desk work" },
-  { text: "Supportive team culture", description: "— you'll have backup" },
-  { text: "Flexible scheduling", description: "— work that fits your life" },
-  { text: "Meaningful impact", description: "— your story becomes someone else's hope" },
-  { text: "Competitive pay", description: "— based on your experience" },
+  { text: "Community-based field work", description: ": real connection, not desk work" },
+  { text: "Supportive team culture", description: ": you'll have backup" },
+  { text: "Flexible scheduling", description: ": work that fits your life" },
+  { text: "Meaningful impact", description: ": your story becomes someone else's hope" },
+  { text: "Competitive pay", description: ": based on your experience" },
 ];
 
 const whoWereLookingFor = [
-  "Certified Peer Specialists (NYS) — required",
+  "Certified Peer Specialists (NYS), required",
   "Adults 18+",
   "Comfortable sharing lived experience",
   "Reliable with strong boundaries",
@@ -45,7 +45,7 @@ const JobsPage = () => {
           name="keywords" 
           content="peer support specialist job nyc, peer specialist jobs nyc, certified peer support specialist jobs, peer specialist jobs near me, peer recovery specialist jobs, certified peer specialist NYC" 
         />
-        <link rel="canonical" href="https://rise2growth.org/jobs" />
+        <link rel="canonical" href="https://rise2growth.com/jobs" />
         
         <script type="application/ld+json">
           {JSON.stringify({

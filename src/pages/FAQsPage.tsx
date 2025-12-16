@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Where will I work?",
-    answer: "Community-based settings across NYC — homes, parks, appointments, community centers. You'll meet people where they are.",
+    answer: "Community-based settings across NYC: homes, parks, appointments, community centers. You'll meet people where they are.",
   },
   {
     question: "How many hours per week?",
@@ -42,11 +42,11 @@ const faqs = [
   },
   {
     question: "How do I apply?",
-    answer: "Email your resume and the boroughs/areas you can work in to info@rise2growth.org. We'll reach out to schedule a conversation.",
+    answer: "Email your resume and the boroughs/areas you can work in to info@rise2growth.com. We'll reach out to schedule a conversation.",
   },
   {
     question: "What makes Rise2Growth different from other agencies?",
-    answer: "We're peer-focused. We understand the work because many of us have lived it. You're not just a number here — you're part of a community.",
+    answer: "We're peer-focused. We understand the work because many of us have lived it. You're not just a number here. You're part of a community.",
   },
   {
     question: "What if I have more questions?",
@@ -67,7 +67,7 @@ const FAQsPage = () => {
           name="keywords" 
           content="peer specialist FAQ, certified peer specialist requirements, peer support jobs questions, Rise2Growth hiring" 
         />
-        <link rel="canonical" href="https://rise2growth.org/faqs" />
+        <link rel="canonical" href="https://rise2growth.com/faqs" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
