@@ -162,7 +162,7 @@ const ServicesPage = () => {
                 <Button size="lg" variant="secondary" asChild>
                   <Link to="/jobs">Apply for Open Positions</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 bg-transparent" asChild>
+                <Button size="lg" variant="secondary" asChild>
                   <Link to="/about">Learn More About the Role</Link>
                 </Button>
               </div>
