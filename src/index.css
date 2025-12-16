@@ -112,4 +112,9 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
   }
+  
+  /* Clips bottom-right corner to hide watermarks */
+  .clip-watermark {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 100px) 100%, 0 100%);
+  }
 }

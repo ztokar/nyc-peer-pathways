@@ -77,7 +77,7 @@ const HomePage = () => {
               <img 
                 src={heroNyc} 
                 alt="Rise2Growth peer support team in NYC"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover clip-watermark"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-transparent" />
             </div>
