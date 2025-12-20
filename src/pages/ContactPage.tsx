@@ -44,16 +44,29 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Rise2Growth - Apply for Peer Specialist Jobs NYC</title>
+        <title>Contact Rise2Growth | Peer Specialist Staffing Agency NYC</title>
         <meta 
           name="description" 
-          content="Ready to join our team? Contact Rise2Growth to apply for peer specialist positions in NYC. We'll get back to you within 2 business days." 
+          content="Contact Rise2Growth to apply for peer specialist jobs in NYC. Your story becomes someone else's hope. We respond within 2 business days." 
         />
         <meta 
           name="keywords" 
-          content="contact Rise2Growth, peer specialist jobs contact, apply peer specialist NYC, peer support jobs application" 
+          content="contact Rise2Growth, apply peer specialist NYC, peer support jobs application, Rise2Growth phone email" 
         />
         <link rel="canonical" href="https://rise2growth.com/contact" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "mainEntity": {
+              "@type": "EmploymentAgency",
+              "name": "Rise2Growth",
+              "telephone": "+1-212-470-7439",
+              "email": "info@rise2growth.com"
+            }
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

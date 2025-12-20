@@ -36,14 +36,14 @@ const JobsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Support Specialist Jobs NYC | Rise2Growth Careers</title>
+        <title>Peer Specialist Jobs NYC | Rise2Growth Staffing Agency Careers</title>
         <meta 
           name="description" 
-          content="We're hiring certified peer specialists across NYC. If you're NYS certified and looking for meaningful community-based work, let's talk." 
+          content="Rise2Growth is hiring certified peer specialists across NYC. Your story becomes someone else's hope. Apply for meaningful community-based peer support work." 
         />
         <meta 
           name="keywords" 
-          content="peer support specialist job nyc, peer specialist jobs nyc, certified peer support specialist jobs, peer specialist jobs near me, peer recovery specialist jobs, certified peer specialist NYC" 
+          content="Rise2Growth jobs, peer specialist jobs NYC, certified peer specialist careers, peer support employment NYC, mental health peer jobs" 
         />
         <link rel="canonical" href="https://rise2growth.com/jobs" />
         
@@ -52,10 +52,11 @@ const JobsPage = () => {
             "@context": "https://schema.org",
             "@type": "JobPosting",
             "title": "Certified Peer Support Specialist",
-            "description": "We're hiring certified peer specialists across NYC. Community-based roles where your story becomes someone else's hope.",
+            "description": "Rise2Growth is hiring certified peer specialists across NYC. Your story becomes someone else's hope through meaningful community-based work.",
             "hiringOrganization": {
-              "@type": "Organization",
-              "name": "Rise2Growth"
+              "@type": "EmploymentAgency",
+              "name": "Rise2Growth",
+              "description": "Staffing agency connecting certified peer specialists with meaningful work across NYC"
             },
             "jobLocation": {
               "@type": "Place",
@@ -66,7 +67,7 @@ const JobsPage = () => {
                 "addressCountry": "US"
               }
             },
-            "employmentType": "FULL_TIME"
+            "employmentType": ["FULL_TIME", "PART_TIME"]
           })}
         </script>
       </Helmet>
@@ -212,7 +213,7 @@ const JobsPage = () => {
                     <Button size="lg" asChild>
                       <Link to="/contact">Apply Now</Link>
                     </Button>
-                    <Button size="lg" variant="outline" asChild>
+                    <Button size="lg" variant="secondary" asChild>
                       <Link to="/faqs">Read FAQs</Link>
                     </Button>
                   </div>
@@ -236,7 +237,7 @@ const JobsPage = () => {
                 <Button size="lg" variant="secondary" asChild>
                   <Link to="/contact">Apply Now</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <Button size="lg" variant="secondary" asChild>
                   <Link to="/faqs">Read FAQs</Link>
                 </Button>
               </div>

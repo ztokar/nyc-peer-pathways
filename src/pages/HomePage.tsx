@@ -40,29 +40,38 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Support Specialist Jobs NYC | Rise2Growth - Join Our Team</title>
+        <title>Rise2Growth | Peer Specialist Staffing Agency NYC - Your Story Becomes Hope</title>
         <meta 
           name="description" 
-          content="Rise2Growth is hiring certified peer specialists for community-based work across NYC. Use your story to help New Yorkers navigate real life." 
+          content="Rise2Growth connects certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope. Apply for peer support jobs today." 
         />
         <meta 
           name="keywords" 
-          content="peer support specialist job nyc, peer specialist jobs nyc, certified peer support specialist jobs, peer specialist jobs near me, peer recovery specialist jobs, certified peer specialist NYC" 
+          content="Rise2Growth, peer specialist staffing agency NYC, peer support specialist jobs NYC, certified peer specialist jobs, mental health peer support NYC, recovery support specialist jobs" 
         />
         <link rel="canonical" href="https://rise2growth.com" />
         
-        <meta property="og:title" content="Peer Support Specialist Jobs NYC | Rise2Growth" />
-        <meta property="og:description" content="Use your story to help New Yorkers navigate real life. We're hiring certified peer specialists." />
+        <meta property="og:title" content="Rise2Growth | Peer Specialist Staffing Agency NYC" />
+        <meta property="og:description" content="Rise2Growth connects certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope." />
         <meta property="og:type" content="website" />
         
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "EmploymentAgency",
             "name": "Rise2Growth",
-            "description": "Staffing agency hiring certified peer specialists for community-based work across NYC",
+            "description": "Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.",
             "telephone": "+1-212-470-7439",
-            "areaServed": ["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island"]
+            "email": "info@rise2growth.com",
+            "areaServed": [
+              { "@type": "City", "name": "Manhattan" },
+              { "@type": "City", "name": "Brooklyn" },
+              { "@type": "City", "name": "Queens" },
+              { "@type": "City", "name": "The Bronx" },
+              { "@type": "City", "name": "Staten Island" }
+            ],
+            "knowsAbout": ["Peer Support", "Mental Health Recovery", "Certified Peer Specialist", "Recovery Support Services"],
+            "serviceType": ["Peer Specialist Staffing", "Mental Health Support Staffing", "Recovery Support Employment"]
           })}
         </script>
       </Helmet>

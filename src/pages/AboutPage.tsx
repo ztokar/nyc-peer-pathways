@@ -33,16 +33,28 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Rise2Growth - Peer Specialist Staffing Agency NYC</title>
+        <title>About Rise2Growth | Peer Specialist Staffing Agency in New York City</title>
         <meta 
           name="description" 
-          content="We're a staffing agency built for peer specialists. We connect certified peers with New Yorkers who need support and create careers where lived experience becomes real impact." 
+          content="Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope." 
         />
         <meta 
           name="keywords" 
-          content="peer support staffing agency NYC, peer specialist jobs, lived experience, peer support NYC, recovery support organization" 
+          content="Rise2Growth about, peer specialist staffing agency NYC, lived experience employment, peer support careers NYC, mental health staffing" 
         />
         <link rel="canonical" href="https://rise2growth.com/about" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "EmploymentAgency",
+              "name": "Rise2Growth",
+              "description": "Staffing agency connecting certified peer specialists with meaningful work across NYC"
+            }
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
