@@ -58,16 +58,40 @@ const FAQsPage = () => {
   return (
     <>
       <Helmet>
-        <title>FAQs | Rise2Growth - Peer Specialist Jobs NYC</title>
+        <title>FAQs | Rise2Growth Peer Specialist Staffing Agency NYC</title>
         <meta 
           name="description" 
-          content="Questions about working as a peer specialist with Rise2Growth? Here's what you need to know about certification, pay, hours, and more." 
+          content="Questions about working with Rise2Growth? Learn about peer specialist certification, pay, hours, and how your story becomes someone else's hope in NYC." 
         />
         <meta 
           name="keywords" 
-          content="peer specialist FAQ, certified peer specialist requirements, peer support jobs questions, Rise2Growth hiring" 
+          content="Rise2Growth FAQ, peer specialist questions, certified peer specialist requirements NYC, peer support job questions" 
         />
         <link rel="canonical" href="https://rise2growth.com/faqs" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do I need to be certified?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. You must be a New York State Certified Peer Specialist to work with Rise2Growth." }
+              },
+              {
+                "@type": "Question",
+                "name": "Where will I work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Community-based settings across NYC: homes, parks, appointments, community centers. You'll meet people where they are." }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes Rise2Growth different?",
+                "acceptedAnswer": { "@type": "Answer", "text": "We're peer-focused. We understand the work because many of us have lived it. You're not just a number here. You're part of a community." }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -125,7 +149,7 @@ const FAQsPage = () => {
                 <Button size="lg" variant="secondary" asChild>
                   <Link to="/contact">Apply Now</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <Button size="lg" variant="secondary" asChild>
                   <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>

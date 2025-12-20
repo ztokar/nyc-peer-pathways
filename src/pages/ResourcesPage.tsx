@@ -18,16 +18,29 @@ const ResourcesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Resources | Rise2Growth - Peer Specialist Certification NYC</title>
+        <title>Peer Specialist Resources | Rise2Growth NYC Staffing Agency</title>
         <meta 
           name="description" 
-          content="Everything you need to know about becoming a peer specialist in NYC. Whether you're exploring certification or already certified and job-hunting, here's what you need." 
+          content="Resources for becoming a certified peer specialist in NYC. Rise2Growth helps connect peer specialists with meaningful work where your story becomes someone else's hope." 
         />
         <meta 
           name="keywords" 
-          content="peer specialist certification NYC, how to become peer specialist, NYS peer certification, peer support training NYC" 
+          content="Rise2Growth resources, peer specialist certification NYC, NYS peer certification, peer support training, how to become peer specialist NYC" 
         />
         <link rel="canonical" href="https://rise2growth.com/resources" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Peer Specialist Certification Resources",
+            "description": "Resources for becoming a certified peer specialist in NYC",
+            "publisher": {
+              "@type": "EmploymentAgency",
+              "name": "Rise2Growth"
+            }
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
