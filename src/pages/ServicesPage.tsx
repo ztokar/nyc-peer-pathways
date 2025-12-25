@@ -77,7 +77,7 @@ const ServicesPage = () => {
                 <p className="text-muted-foreground mt-4">
                   Our peer specialists provide flexible, real support grounded in lived experience.
                   <br />
-                  You'll meet people where they are — at home, in the community, or anywhere they need help.
+                  You'll meet people where they are: at home, in the community, or anywhere they need help.
                 </p>
               </div>
             </div>
