@@ -147,12 +147,15 @@ const FAQsPage = () => {
               </h2>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
-                  <Link to="/contact">Apply Now</Link>
+                  <Link to="/jobs">See Open Positions</Link>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
                   <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
+              <p className="mt-8 opacity-80">
+                Not certified yet? <Link to="/resources" className="underline hover:no-underline">Learn how to get started →</Link>
+              </p>
             </div>
           </section>
         </main>

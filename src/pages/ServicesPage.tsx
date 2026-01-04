@@ -177,9 +177,12 @@ const ServicesPage = () => {
                   <Link to="/jobs">Apply for Open Positions</Link>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                  <Link to="/about">Learn More About the Role</Link>
+                  <Link to="/about">Learn More About Rise2Growth</Link>
                 </Button>
               </div>
+              <p className="mt-8 opacity-80">
+                Have questions? <Link to="/faqs" className="underline hover:no-underline">Read our FAQs →</Link>
+              </p>
             </div>
           </section>
         </main>

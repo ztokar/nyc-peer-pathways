@@ -241,6 +241,9 @@ const JobsPage = () => {
                   <Link to="/faqs">Read FAQs</Link>
                 </Button>
               </div>
+              <p className="mt-8 opacity-80">
+                Not certified yet? <Link to="/resources" className="underline hover:no-underline">Learn how to get started →</Link>
+              </p>
             </div>
           </section>
         </main>
