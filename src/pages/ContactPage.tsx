@@ -176,7 +176,7 @@ const ContactPage = () => {
                     Send Us a Message
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    Tell us about yourself.
+                    You can email us directly at <a href="mailto:info@rise2growth.com" className="text-primary hover:underline">info@rise2growth.com</a> or fill out the form below.
                     <br />
                     We'll respond as soon as possible.
                   </p>

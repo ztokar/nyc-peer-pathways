@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 const faqs = [
   {
     question: "Do I need to be certified?",
-    answer: "Yes. You must be a New York State Certified Peer Specialist to work with us.",
+    answer: "Yes to work, and if you don't have it we can help you get it.",
   },
   {
     question: "What if I just got certified?",
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     question: "Where will I work?",
-    answer: "Community-based settings across NYC: homes, parks, appointments, community centers. You'll meet people where they are.",
+    answer: "Community-based settings across NYC: homes, parks, facilities, community centers. You'll meet people where they are.",
   },
   {
     question: "How many hours per week?",
-    answer: "It depends on the role and your availability. Most positions range from 10–20 hours per week, with flexibility.",
+    answer: "It depends on the role and your availability. Most clients get approved for 10-20 hours.",
   },
   {
     question: "Do I need a car?",
@@ -77,12 +77,12 @@ const FAQsPage = () => {
               {
                 "@type": "Question",
                 "name": "Do I need to be certified?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. You must be a New York State Certified Peer Specialist to work with Rise2Growth." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes to work, and if you don't have it we can help you get it." }
               },
               {
                 "@type": "Question",
                 "name": "Where will I work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Community-based settings across NYC: homes, parks, appointments, community centers. You'll meet people where they are." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Community-based settings across NYC: homes, parks, facilities, community centers. You'll meet people where they are." }
               },
               {
                 "@type": "Question",

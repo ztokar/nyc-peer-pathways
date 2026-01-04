@@ -9,7 +9,7 @@ import communityWork from "@/assets/community-work.png";
 const howItWorks = [
   "You're paired with individuals who need support",
   "Sessions match their needs (10-20 hours a week)",
-  "Support happens in the community: subways, appointments, parks, wherever help is needed",
+  "Support happens in the community: private homes or facilities, parks, wherever help is needed",
   "You move at their pace",
 ];
 
