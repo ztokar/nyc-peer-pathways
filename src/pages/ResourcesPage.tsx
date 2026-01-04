@@ -83,23 +83,6 @@ const ResourcesPage = () => {
                   <div className="space-y-6">
                     <div className="bg-card rounded-xl p-6 border border-border">
                       <h3 className="font-display font-bold text-foreground mb-2">
-                        New York Peer Specialist Certification Board (NYPSCB)
-                      </h3>
-                      <p className="text-muted-foreground mb-3">
-                        The official certifying body for peer specialists in New York.
-                      </p>
-                      <a 
-                        href="https://nypscb.org/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary hover:underline"
-                      >
-                        nypscb.org <ExternalLink className="h-4 w-4" />
-                      </a>
-                    </div>
-
-                    <div className="bg-card rounded-xl p-6 border border-border">
-                      <h3 className="font-display font-bold text-foreground mb-2">
                         Academy of Peer Services
                       </h3>
                       <p className="text-muted-foreground mb-3">
@@ -112,6 +95,23 @@ const ResourcesPage = () => {
                         className="inline-flex items-center gap-2 text-primary hover:underline"
                       >
                         academyofpeerservices.org <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </div>
+
+                    <div className="bg-card rounded-xl p-6 border border-border">
+                      <h3 className="font-display font-bold text-foreground mb-2">
+                        New York Peer Specialist Certification Board (NYPSCB)
+                      </h3>
+                      <p className="text-muted-foreground mb-3">
+                        The official certifying body for peer specialists in New York.
+                      </p>
+                      <a 
+                        href="https://nypscb.org/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:underline"
+                      >
+                        nypscb.org <ExternalLink className="h-4 w-4" />
                       </a>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ const ResourcesPage = () => {
                   ))}
                 </ul>
                 <p className="text-muted-foreground">
-                  Training typically takes <strong>4–6 weeks</strong> and includes exams and practice hours.
+                  Training takes about <strong>1 week</strong>, and you'll receive your certificate in approximately <strong>4+ weeks</strong>.
                 </p>
               </div>
             </div>
