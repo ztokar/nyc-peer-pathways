@@ -22,7 +22,7 @@ const whyPeerWorkMatters = [
 
 const whatWereLookingFor = [
   "NYS Certified Peer Specialists (or CRPA)",
-  "CRPA works too — approved for mental health and substance abuse",
+  "CRPA works too, approved for mental health and substance abuse",
   "Adults 18+",
   "Compassionate and grounded",
   "Ready to work in the community",
