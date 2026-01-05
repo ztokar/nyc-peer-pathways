@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg p-3 w-fit mb-4">
-              <img src={logo} alt="Rise2Growth" className="h-16 w-auto" />
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 w-fit mb-4">
+              <img src={logo} alt="Rise2Growth" className="h-16 w-auto brightness-110" />
             </div>
             <p className="text-white/70 mb-4 max-w-md">
               Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.
