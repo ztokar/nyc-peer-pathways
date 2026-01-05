@@ -13,11 +13,18 @@ const Footer = () => {
             <p className="text-muted-foreground mb-4 max-w-md">
               Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-4">
               <a href="tel:1212-470-7439" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
                 (212) 470-7439
               </a>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island"].map((area) => (
+                <span key={area} className="px-3 py-1 bg-golden rounded-full text-sm font-medium">
+                  {area}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -47,18 +54,6 @@ const Footer = () => {
                 <a href="mailto:info@rise2growth.com" className="hover:text-primary transition-colors">info@rise2growth.com</a>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* Service Areas */}
-        <div className="border-t border-border pt-8 mb-8">
-          <h4 className="font-display font-bold text-foreground mb-4">Serving All NYC Boroughs</h4>
-          <div className="flex flex-wrap gap-3">
-            {["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island"].map((area) => (
-              <span key={area} className="px-4 py-2 bg-golden rounded-full text-sm font-medium">
-                {area}
-              </span>
-            ))}
           </div>
         </div>
 
