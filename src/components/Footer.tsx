@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <img src={logo} alt="Rise2Growth" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Rise2Growth" className="h-24 w-auto mb-4" />
             <p className="text-muted-foreground mb-4 max-w-md">
               Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.
             </p>
