@@ -55,7 +55,7 @@ const Footer = () => {
           <h4 className="font-display font-bold text-foreground mb-4">Serving All NYC Boroughs</h4>
           <div className="flex flex-wrap gap-3">
             {["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island"].map((area) => (
-              <span key={area} className="px-4 py-2 bg-background rounded-full text-sm">
+              <span key={area} className="px-4 py-2 bg-golden rounded-full text-sm font-medium">
                 {area}
               </span>
             ))}
