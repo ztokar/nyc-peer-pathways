@@ -103,8 +103,10 @@ const HomePage = () => {
                 
                 <p className="text-lg text-muted-foreground mb-8">
                   Rise2Growth is a <strong>staffing agency</strong> hiring certified peer specialists for mental health and substance abuse work across NYC.
-                  <br /><br />
-                  If you're certified and looking for meaningful peer work, we want to meet you.
+                </p>
+                
+                <p className="text-lg text-muted-foreground mb-8">
+                  If you're certified and looking for meaningful peer work, we want to meet you. And if you're not certified yet, we can help you get certified and join our team.
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
