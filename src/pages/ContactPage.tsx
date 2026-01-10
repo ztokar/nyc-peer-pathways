@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Phone, Mail, Clock, Briefcase } from "lucide-react";
@@ -6,40 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const ContactPage = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    reason: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const subject = encodeURIComponent(`Contact from ${formData.firstName} ${formData.lastName}: ${formData.reason || "General Inquiry"}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone || "Not provided"}\nReason: ${formData.reason || "Not specified"}\n\nMessage:\n${formData.message}`
-    );
-    
-    window.location.href = `mailto:info@rise2growth.com?subject=${subject}&body=${body}`;
-    
-    toast({
-      title: "Opening email client",
-      description: "Your message details have been prepared. Please send the email to complete your inquiry.",
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
 
   return (
     <>
@@ -181,15 +150,18 @@ const ContactPage = () => {
                     We'll respond as soon as possible.
                   </p>
                   
-                  <form className="space-y-6" onSubmit={handleSubmit}>
+                  <form 
+                    className="space-y-6" 
+                    action="https://formspree.io/f/mlggrowr"
+                    method="POST"
+                  >
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">First Name</Label>
                         <Input 
                           id="firstName" 
+                          name="firstName"
                           placeholder="Your first name" 
-                          value={formData.firstName}
-                          onChange={handleChange}
                           required
                         />
                       </div>
@@ -197,9 +169,8 @@ const ContactPage = () => {
                         <Label htmlFor="lastName">Last Name</Label>
                         <Input 
                           id="lastName" 
+                          name="lastName"
                           placeholder="Your last name"
-                          value={formData.lastName}
-                          onChange={handleChange}
                           required
                         />
                       </div>
@@ -209,10 +180,9 @@ const ContactPage = () => {
                       <Label htmlFor="email">Email</Label>
                       <Input 
                         id="email" 
+                        name="email"
                         type="email" 
                         placeholder="your@email.com"
-                        value={formData.email}
-                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -221,10 +191,9 @@ const ContactPage = () => {
                       <Label htmlFor="phone">Phone (optional)</Label>
                       <Input 
                         id="phone" 
+                        name="phone"
                         type="tel" 
                         placeholder="(555) 123-4567"
-                        value={formData.phone}
-                        onChange={handleChange}
                       />
                     </div>
                     
@@ -232,9 +201,8 @@ const ContactPage = () => {
                       <Label htmlFor="reason">How can we help?</Label>
                       <select 
                         id="reason" 
+                        name="reason"
                         className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground"
-                        value={formData.reason}
-                        onChange={handleChange}
                       >
                         <option value="">Select an option</option>
                         <option value="I want to apply for a job">I want to apply for a job</option>
@@ -248,10 +216,9 @@ const ContactPage = () => {
                       <Label htmlFor="message">Message</Label>
                       <Textarea 
                         id="message" 
+                        name="message"
                         placeholder="Tell us about yourself and the NYC areas you can work in..."
                         rows={4}
-                        value={formData.message}
-                        onChange={handleChange}
                         required
                       />
                     </div>
