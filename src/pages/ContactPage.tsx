@@ -152,7 +152,7 @@ const ContactPage = () => {
                   
                   <form 
                     className="space-y-6" 
-                    action="https://formspree.io/f/mlggrowr"
+                    action="https://formspree.io/f/xreegkbp"
                     method="POST"
                   >
                     <div className="grid sm:grid-cols-2 gap-4">
