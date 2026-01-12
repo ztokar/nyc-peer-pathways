@@ -50,7 +50,7 @@ const HomePage = () => {
           name="keywords" 
           content="Rise2Growth, peer specialist staffing agency NYC, peer support specialist jobs NYC, certified peer specialist jobs, mental health peer support NYC, recovery support specialist jobs" 
         />
-        <link rel="canonical" href="https://rise2growth.com" />
+        <link rel="canonical" href="https://rise2growth.com/" />
         
         <meta property="og:title" content="Rise2Growth | Peer Specialist Staffing Agency NYC" />
         <meta property="og:description" content="Rise2Growth connects certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope." />
