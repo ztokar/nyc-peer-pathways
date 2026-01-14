@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://rise2growth.com/sitemap.xml
