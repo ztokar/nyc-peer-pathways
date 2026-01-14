@@ -8,6 +8,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!sitemap\\.xml|robots\\.txt|favicon\\.ico|og-image\\.png|placeholder\\.svg).*)", "destination": "/index.html" }
   ]
 }
