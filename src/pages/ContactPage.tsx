@@ -188,12 +188,13 @@ const ContactPage = () => {
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone (optional)</Label>
+                      <Label htmlFor="phone">Phone</Label>
                       <Input 
                         id="phone" 
                         name="phone"
                         type="tel" 
                         placeholder="(555) 123-4567"
+                        required
                       />
                     </div>
                     
