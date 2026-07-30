@@ -36,7 +36,7 @@ const AboutPage = () => {
         <title>About Rise2Growth | Peer Specialist Staffing Agency in New York City</title>
         <meta 
           name="description" 
-          content="Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope." 
+          content="Rise2Growth is a staffing agency connecting talented individuals with meaningful work across NYC. Your story becomes someone else's hope." 
         />
         <meta 
           name="keywords" 
@@ -51,7 +51,7 @@ const AboutPage = () => {
             "mainEntity": {
               "@type": "EmploymentAgency",
               "name": "Rise2Growth",
-              "description": "Staffing agency connecting certified peer specialists with meaningful work across NYC"
+              "description": "Staffing agency connecting talented individuals with meaningful work across NYC"
             }
           })}
         </script>
@@ -69,10 +69,10 @@ const AboutPage = () => {
                   About <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We're a staffing agency built for peer specialists.</strong>
+                  <strong>We're a staffing agency built for qualified healthcare, school-based, facility-based and community care professionals across NYC.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  We connect certified peers with New Yorkers who need support, and we create careers where lived experience becomes real impact.
+                  We connect professional talent with healthcare, educational, and behavioral health agencies across NYC to help their clients get the support they need. We create careers where lived experience becomes real impact.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const AboutPage = () => {
                     Our Mission
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    To build a network of peer specialists who help New Yorkers feel seen, supported, and empowered.
+                    To build a network of high-quality talented individuals, who help New Yorkers feel seen, supported, and empowered.
                   </p>
 
                   <h2 className="text-2xl font-display font-bold text-foreground mb-4">
@@ -100,7 +100,7 @@ const AboutPage = () => {
                     People need support.
                   </p>
                   <p className="text-muted-foreground mb-2">
-                    Peer specialists make the difference.
+                    You can make the difference.
                   </p>
                   <p className="text-foreground font-medium mt-4">
                     We exist to help you build a career doing work that matters.
