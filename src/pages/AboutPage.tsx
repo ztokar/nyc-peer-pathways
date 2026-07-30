@@ -20,6 +20,7 @@ const whatYoullHelpWith = [
   "Community programs",
   "Daily responsibilities",
   "City services",
+  "Helping others reach their goals.",
 ];
 
 const promises = [
