@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Users, Heart, Target, CheckCircle, Clock, Briefcase } from "lucide-react";
+import { Users, Heart, Target, CheckCircle, Clock, Briefcase, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,7 +10,7 @@ const howItWorks = [
   "You're paired with individuals who need support",
   "Sessions match their needs (10-20 hours a week)",
   "Support happens in the community: private homes or facilities, parks, wherever help is needed",
-  "You move at their pace\n\n\nAdult Peer Support (Ages 18+)",
+  "You move at their pace",
 ];
 
 const whatYoullProvide = [
@@ -18,7 +18,15 @@ const whatYoullProvide = [
   "Help with goals and daily routines",
   "Navigation of NYC systems",
   "Encouragement when life gets heavy",
-  "Real connection, not clinical pressure\n",
+  "Real connection, not clinical pressure",
+];
+
+const studentSupportHowItWorks = [
+  "Provide assigned services to students in accordance with school and program requirements",
+  "Maintain a safe, positive, and professional learning environment",
+  "Collaborate with teachers, administrators, and other school staff to support student success",
+  "Follow each student's individualized education plan (IEP), treatment plan, or service goals, as applicable",
+  "Complete all required documentation accurately and within required timelines",
 ];
 
 const whatYoullHelpWith = [
