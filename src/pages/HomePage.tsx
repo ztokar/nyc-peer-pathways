@@ -102,7 +102,7 @@ const HomePage = () => {
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  Rise2Growth provides specialized staffing solutions for NYC schools, healthcare facilities, and behavioral health programs—delivering certified peer specialists and dedicated care professionals right where they are needed most.
+                  Rise2Growth provides specialized staffing solutions for NYC schools, healthcare facilities, and behavioral health programs—delivering specialists and dedicated care professionals right where they are needed most.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
