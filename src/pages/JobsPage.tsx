@@ -15,7 +15,7 @@ const whatWeOffer = [
 ];
 
 const whoWereLookingFor = [
-  "Certified Peer Specialists (NYS), required",
+  "\n",
   "Adults 18+",
   "Comfortable sharing lived experience",
   "Reliable with strong boundaries",
@@ -85,7 +85,7 @@ const JobsPage = () => {
                   Jobs at <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We're hiring certified peer specialists across NYC.</strong>
+                  <strong>We're hiring certified specialists across NYC.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
                   If you're NYS certified and looking for meaningful community-based work, let's talk.
