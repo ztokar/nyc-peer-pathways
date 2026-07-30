@@ -69,10 +69,10 @@ const AboutPage = () => {
                   About <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We're a staffing agency built for qualified healthcare, school-based, facility-based and community care professionals across NYC.</strong>
+                  <strong>We're a staffing agency built for qualified healthcare, school-based, facility-based and community care professionals across NY.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  We connect professional talent with healthcare, educational, and behavioral health agencies across NYC to help their clients get the support they need. We create careers where lived experience becomes real impact.
+                  We connect professional talent with healthcare, educational, and behavioral health agencies across NY to help their clients get the support they need. We create careers where lived experience becomes real impact.
                 </p>
               </div>
             </div>
@@ -87,14 +87,14 @@ const AboutPage = () => {
                     Our Mission
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    To build a network of high-quality talented individuals, who help New Yorkers feel seen, supported, and empowered.
+                    To build a network of high-quality talented individuals, who help others feel seen, supported, and empowered.
                   </p>
 
                   <h2 className="text-2xl font-display font-bold text-foreground mb-4">
                     Why We Exist
                   </h2>
                   <p className="text-muted-foreground mb-2">
-                    NYC moves fast.
+                    NY moves fast.
                   </p>
                   <p className="text-muted-foreground mb-2">
                     People need support.
@@ -152,7 +152,7 @@ const AboutPage = () => {
                     What You'll Help With
                   </h2>
                 </div>
-                <p className="text-muted-foreground mb-8">You'll support New Yorkers navigating:</p>
+                <p className="text-muted-foreground mb-8">You'll support others navigating:</p>
                 <ul className="space-y-3">
                   {whatYoullHelpWith.map((item) => (
                     <li key={item} className="flex items-center gap-3">
