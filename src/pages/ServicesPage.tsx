@@ -10,7 +10,7 @@ const howItWorks = [
   "You're paired with individuals who need support",
   "Sessions match their needs (10-20 hours a week)",
   "Support happens in the community: private homes or facilities, parks, wherever help is needed",
-  "You move at their pace",
+  "You move at their pace\n\n\nAdult Peer Support (Ages 18+)",
 ];
 
 const whatYoullProvide = [
@@ -18,7 +18,7 @@ const whatYoullProvide = [
   "Help with goals and daily routines",
   "Navigation of NYC systems",
   "Encouragement when life gets heavy",
-  "Real connection, not clinical pressure",
+  "Real connection, not clinical pressure\n",
 ];
 
 const whatYoullHelpWith = [
@@ -72,10 +72,10 @@ const ServicesPage = () => {
                   The Work <span className="text-primary">You'll Do</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>The work you'll do as a peer specialist.</strong>
+                  <strong>The work you'll do as a support specialist.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  Our peer specialists provide flexible, real support grounded in lived experience.
+                  Our specialists provide flexible, real support grounded in lived experience.
                   <br />
                   You'll meet people where they are: at home, in the community, or anywhere they need help.
                 </p>
@@ -90,7 +90,7 @@ const ServicesPage = () => {
                 <div className="flex items-center gap-3 mb-8">
                   <Users className="h-10 w-10 text-primary" />
                   <h2 className="text-3xl font-display font-bold text-foreground">
-                    Adult Peer Support (Ages 18+)
+                    Adult Peer Support or student support
                   </h2>
                 </div>
 
