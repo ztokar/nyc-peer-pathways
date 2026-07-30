@@ -168,7 +168,7 @@ const ServicesPage = () => {
           </section>
 
           {/* Image + What You'll Help With */}
-          <section className="py-16 bg-muted">
+          <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                 <div>
