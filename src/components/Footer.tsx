@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <img src={logo} alt="Rise2Growth" className="h-24 w-auto mb-4" />
             <p className="text-muted-foreground mb-4 max-w-md">
-              Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.
+              Rise2Growth is a staffing agency connecting talented individuals with meaningful work across NYC. Your story becomes someone else's hope.
             </p>
             <div className="flex gap-4 mb-4">
               <a href="tel:1212-470-7439" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
