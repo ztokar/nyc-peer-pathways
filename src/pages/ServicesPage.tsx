@@ -98,7 +98,7 @@ const ServicesPage = () => {
                 <div className="flex items-center gap-3 mb-8">
                   <Users className="h-10 w-10 text-primary" />
                   <h2 className="text-3xl font-display font-bold text-foreground">
-                    Adult Peer Support or student support
+                    Adult Peer Support
                   </h2>
                 </div>
 
@@ -128,6 +128,36 @@ const ServicesPage = () => {
                     {whatYoullProvide.map((item) => (
                       <li key={item} className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Student Support */}
+          <section className="py-16 bg-muted">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center gap-3 mb-8">
+                  <GraduationCap className="h-10 w-10 text-primary" />
+                  <h2 className="text-3xl font-display font-bold text-foreground">
+                    Student Support
+                  </h2>
+                </div>
+
+                {/* How It Works */}
+                <div className="mb-12">
+                  <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                    <Clock className="h-5 w-5 text-secondary" />
+                    How It Works
+                  </h3>
+                  <ul className="space-y-3">
+                    {studentSupportHowItWorks.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="h-2 w-2 rounded-full bg-primary flex-shrink-0 mt-2" />
                         <span className="text-foreground">{item}</span>
                       </li>
                     ))}
