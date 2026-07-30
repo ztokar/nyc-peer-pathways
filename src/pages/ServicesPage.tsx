@@ -171,6 +171,22 @@ const ServicesPage = () => {
                     ))}
                   </ul>
                 </div>
+
+                {/* What You'll Provide */}
+                <div className="mb-12">
+                  <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                    <Target className="h-5 w-5 text-primary" />
+                    What You'll Provide
+                  </h3>
+                  <ul className="space-y-3">
+                    {studentSupportWhatYoullProvide.map((item) => (
+                      <li key={item} className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
