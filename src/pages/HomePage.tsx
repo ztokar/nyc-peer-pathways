@@ -106,7 +106,7 @@ const HomePage = () => {
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  If you're certified and looking for meaningful work, we want to meet you. And if you're not certified yet, we can help you get certified and join our team.
+                  If you're looking for meaningful work, we want to meet you.&nbsp;
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
