@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <img src={logo} alt="Rise2Growth" className="h-24 w-auto mb-4" />
             <p className="text-muted-foreground mb-4 max-w-md">
-              Rise2Growth is a staffing agency connecting talented individuals with meaningful work across NYC. Your story becomes someone else's hope.
+              Rise2Growth is a staffing agency connecting talented individuals with meaningful work across NY. Your story becomes someone else's hope.
             </p>
             <div className="flex gap-4 mb-4">
               <a href="tel:1212-470-7439" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8 text-center text-muted-foreground text-sm">
           <p>© {new Date().getFullYear()} Rise2Growth. All rights reserved.</p>
           <p className="mt-2">
-            Peer Support Specialist Jobs NYC | Support Specialist | Recovery Coach | Peer Advocate
+            Peer Support Specialist Jobs NY| Support Specialist | Recovery Coach | Peer Advocate
           </p>
         </div>
       </div>
