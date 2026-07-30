@@ -29,6 +29,14 @@ const studentSupportHowItWorks = [
   "Complete all required documentation accurately and within required timelines",
 ];
 
+const studentSupportWhatYoullProvide = [
+  "Demonstrate reliability, professionalism, and accountability",
+  "Provide compassionate, student-centered services",
+  "Maintain accurate documentation and timely communication",
+  "Represent the agency positively within assigned schools",
+  "Comply with all agency, school district, state, and federal regulations",
+];
+
 const whatYoullHelpWith = [
   "Recovery steps",
   "Housing and benefits navigation",
