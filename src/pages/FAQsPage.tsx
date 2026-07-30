@@ -77,7 +77,7 @@ const FAQsPage = () => {
               {
                 "@type": "Question",
                 "name": "Do I need to be certified?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes to work, and if you don't have it we can help you get it." }
+                "acceptedAnswer": { "@type": "Answer", "text": "It depends on the positionYes to work, and if you don't have it we can help you get it." }
               },
               {
                 "@type": "Question",
