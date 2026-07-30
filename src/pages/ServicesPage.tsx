@@ -29,6 +29,14 @@ const studentSupportHowItWorks = [
   "Complete all required documentation accurately and within required timelines",
 ];
 
+const studentSupportWhatYoullProvide = [
+  "Demonstrate reliability, professionalism, and accountability",
+  "Provide compassionate, student-centered services",
+  "Maintain accurate documentation and timely communication",
+  "Represent the agency positively within assigned schools",
+  "Comply with all agency, school district, state, and federal regulations",
+];
+
 const whatYoullHelpWith = [
   "Recovery steps",
   "Housing and benefits navigation",
@@ -158,6 +166,22 @@ const ServicesPage = () => {
                     {studentSupportHowItWorks.map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <div className="h-2 w-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                        <span className="text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* What You'll Provide */}
+                <div className="mb-12">
+                  <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                    <Target className="h-5 w-5 text-primary" />
+                    What You'll Provide
+                  </h3>
+                  <ul className="space-y-3">
+                    {studentSupportWhatYoullProvide.map((item) => (
+                      <li key={item} className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                         <span className="text-foreground">{item}</span>
                       </li>
                     ))}
