@@ -20,11 +20,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-wrap gap-2">
-              {["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island"].map((area) => (
-                <span key={area} className="px-3 py-1 bg-golden rounded-full text-sm font-medium">
-                  {area}
-                </span>
-              ))}
+            {["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island", "Long Island"].map((area) => (
+              <span key={area} className="px-3 py-1 bg-golden rounded-full text-sm font-medium">
+                {area}
+              </span>
+            ))}
             </div>
           </div>
 
