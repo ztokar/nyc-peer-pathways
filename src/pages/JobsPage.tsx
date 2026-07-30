@@ -85,10 +85,10 @@ const JobsPage = () => {
                   Jobs at <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We're hiring certified specialists across NYC.</strong>
+                  <strong>We're hiring specialists across NYC.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  If you're NYS certified and looking for meaningful community-based work, let's talk.
+                  If you are looking for meaningful community-based work, let's talk.
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ const JobsPage = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
                   <h3 className="text-2xl font-display font-bold text-foreground mb-6">
-                    Certified Peer Support Specialist
+                    Support Specialist
                   </h3>
                   
                   <div className="flex flex-wrap gap-4 mb-6">
