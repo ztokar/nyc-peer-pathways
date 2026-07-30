@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8 text-center text-muted-foreground text-sm">
           <p>© {new Date().getFullYear()} Rise2Growth. All rights reserved.</p>
           <p className="mt-2">
-            Peer Support Specialist Jobs NYC | Certified Peer Specialist | Recovery Coach | Peer Advocate
+            Peer Support Specialist Jobs NYC | Support Specialist | Recovery Coach | Peer Advocate
           </p>
         </div>
       </div>
