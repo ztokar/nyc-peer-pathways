@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Users, Heart, Target, CheckCircle, Clock, Briefcase } from "lucide-react";
+import { Users, Heart, Target, CheckCircle, Clock, Briefcase, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,7 +10,7 @@ const howItWorks = [
   "You're paired with individuals who need support",
   "Sessions match their needs (10-20 hours a week)",
   "Support happens in the community: private homes or facilities, parks, wherever help is needed",
-  "You move at their pace\n\n\nAdult Peer Support (Ages 18+)",
+  "You move at their pace",
 ];
 
 const whatYoullProvide = [
@@ -18,7 +18,15 @@ const whatYoullProvide = [
   "Help with goals and daily routines",
   "Navigation of NYC systems",
   "Encouragement when life gets heavy",
-  "Real connection, not clinical pressure\n",
+  "Real connection, not clinical pressure",
+];
+
+const studentSupportHowItWorks = [
+  "Provide assigned services to students in accordance with school and program requirements",
+  "Maintain a safe, positive, and professional learning environment",
+  "Collaborate with teachers, administrators, and other school staff to support student success",
+  "Follow each student's individualized education plan (IEP), treatment plan, or service goals, as applicable",
+  "Complete all required documentation accurately and within required timelines",
 ];
 
 const whatYoullHelpWith = [
@@ -90,7 +98,7 @@ const ServicesPage = () => {
                 <div className="flex items-center gap-3 mb-8">
                   <Users className="h-10 w-10 text-primary" />
                   <h2 className="text-3xl font-display font-bold text-foreground">
-                    Adult Peer Support or student support
+                    Adult Peer Support
                   </h2>
                 </div>
 
@@ -129,8 +137,38 @@ const ServicesPage = () => {
             </div>
           </section>
 
-          {/* Image + What You'll Help With */}
+          {/* Student Support */}
           <section className="py-16 bg-muted">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center gap-3 mb-8">
+                  <GraduationCap className="h-10 w-10 text-primary" />
+                  <h2 className="text-3xl font-display font-bold text-foreground">
+                    Student Support
+                  </h2>
+                </div>
+
+                {/* How It Works */}
+                <div className="mb-12">
+                  <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                    <Clock className="h-5 w-5 text-secondary" />
+                    How It Works
+                  </h3>
+                  <ul className="space-y-3">
+                    {studentSupportHowItWorks.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="h-2 w-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                        <span className="text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Image + What You'll Help With */}
+          <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                 <div>
