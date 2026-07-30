@@ -95,18 +95,18 @@ const HomePage = () => {
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-2xl">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 leading-tight">
-                  Peer support work that actually <span className="text-primary">means something.</span>
+                  Work that actually <span className="text-primary">means something.</span>
                 </h1>
                 <p className="text-xl text-muted-foreground mb-4">
                   Use your story to help New Yorkers navigate real life.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  Rise2Growth is a <strong>staffing agency</strong> hiring certified peer specialists for mental health and substance abuse work across NYC.
+                  Rise2Growth provides specialized staffing solutions for NYC schools, healthcare facilities, and behavioral health programs—delivering certified peer specialists and dedicated care professionals right where they are needed most.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  If you're certified and looking for meaningful peer work, we want to meet you. And if you're not certified yet, we can help you get certified and join our team.
+                  If you're certified and looking for meaningful work, we want to meet you. And if you're not certified yet, we can help you get certified and join our team.
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
