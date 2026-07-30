@@ -15,7 +15,7 @@ const whatWeOffer = [
 ];
 
 const whoWereLookingFor = [
-  "\n",
+  "\u00a0 \u00a0",
   "Adults 18+",
   "Comfortable sharing lived experience",
   "Reliable with strong boundaries",
