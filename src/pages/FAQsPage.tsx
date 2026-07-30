@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "What if I just got certified?",
-    answer: "Perfect. We welcome newly certified peers and provide mentorship as you build experience.",
+    answer: "Perfect. We welcome newly certified professionals and provide mentorship as you build experience.",
   },
   {
     question: "Where will I work?",
@@ -30,14 +30,14 @@ const faqs = [
   },
   {
     question: "Do I need a car?",
-    answer: "Not required, but helpful. Many of our peer specialists use public transit to meet clients throughout the city.",
+    answer: "Not required, but helpful. Many of our specialists use public transit to meet clients throughout the city.",
   },
   {
     question: "What's the pay?",
     answer: "Competitive and based on experience. We'll discuss specifics during the interview process.",
   },
   {
-    question: "Will I get support as a peer specialist?",
+    question: "Will I get support as a specialist?",
     answer: "Yes. You'll have access to supervision, mentorship, and a team that values your wellbeing.",
   },
   {
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     question: "What makes Rise2Growth different from other agencies?",
-    answer: "We're peer-focused. We understand the work because many of us have lived it. You're not just a number here. You're part of a community.",
+    answer: "We're focused on high-quality talent and impact. We understand the work because many of us have lived it. You're not just a number here. You're part of a community.",
   },
   {
     question: "What if I have more questions?",
@@ -58,14 +58,14 @@ const FAQsPage = () => {
   return (
     <>
       <Helmet>
-        <title>FAQs | Rise2Growth Peer Specialist Staffing Agency NYC</title>
+        <title>FAQs | Rise2Growth Specialist Staffing Agency NYC</title>
         <meta 
           name="description" 
-          content="Questions about working with Rise2Growth? Learn about peer specialist certification, pay, hours, and how your story becomes someone else's hope in NYC." 
+          content="Questions about working with Rise2Growth? Learn about specialist certification, pay, hours, and how your story becomes someone else's hope in NYC." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth FAQ, peer specialist questions, certified peer specialist requirements NYC, peer support job questions" 
+          content="Rise2Growth FAQ, specialist questions, certified specialist requirements NYC, support job questions" 
         />
         <link rel="canonical" href="https://rise2growth.com/faqs" />
         
@@ -87,7 +87,7 @@ const FAQsPage = () => {
               {
                 "@type": "Question",
                 "name": "What makes Rise2Growth different?",
-                "acceptedAnswer": { "@type": "Answer", "text": "We're peer-focused. We understand the work because many of us have lived it. You're not just a number here. You're part of a community." }
+                "acceptedAnswer": { "@type": "Answer", "text": "We're focused on high-quality talent and impact. We understand the work because many of us have lived it. You're not just a number here. You're part of a community." }
               }
             ]
           })}
@@ -107,7 +107,7 @@ const FAQsPage = () => {
                   <span className="text-primary">FAQs</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Questions about working as a peer specialist with Rise2Growth?</strong>
+                  <strong>Questions about working as a specialist with Rise2Growth?</strong>
                   <br />
                   Here's what you need to know.
                 </p>
