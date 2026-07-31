@@ -50,14 +50,14 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Support Services | Rise2Growth Staffing Agency NYC</title>
+        <title>Peer Support Services | Rise2Growth Staffing Agency NY</title>
         <meta 
           name="description" 
-          content="Rise2Growth peer specialists provide community-based mental health support across NYC. Your story becomes someone else's hope through 1:1 and group peer support." 
+          content="Rise2Growth peer specialists provide community-based mental health support across NY. Your story becomes someone else's hope through 1:1 and group peer support." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth services, peer support services NYC, community mental health support, 1:1 peer support, peer specialist duties NYC" 
+          content="Rise2Growth services, peer support services NY, community mental health support, 1:1 peer support, peer specialist duties NY" 
         />
         <link rel="canonical" href="https://rise2growth.com/services" />
         
@@ -70,8 +70,8 @@ const ServicesPage = () => {
               "@type": "EmploymentAgency",
               "name": "Rise2Growth"
             },
-            "description": "Community-based peer support services provided by certified peer specialists across NYC",
-            "areaServed": "New York City"
+            "description": "Community-based peer support services provided by certified peer specialists across NY",
+            "areaServed": "New York"
           })}
         </script>
       </Helmet>
@@ -198,7 +198,7 @@ const ServicesPage = () => {
                 <div>
                   <img 
                     src={communityWork} 
-                    alt="Rise2Growth community support in NYC"
+                    alt="Rise2Growth community support in NY"
                     className="w-full rounded-2xl shadow-xl clip-watermark"
                   />
                 </div>

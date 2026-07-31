@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Where will I work?",
-    answer: "Community-based settings across NYC: homes, parks, facilities, community centers. You'll meet people where they are.",
+    answer: "Community-based settings across NY: homes, parks, facilities, community centers. You'll meet people where they are.",
   },
   {
     question: "How many hours per week?",
@@ -58,14 +58,14 @@ const FAQsPage = () => {
   return (
     <>
       <Helmet>
-        <title>FAQs | Rise2Growth Specialist Staffing Agency NYC</title>
+        <title>FAQs | Rise2Growth Specialist Staffing Agency NY</title>
         <meta 
           name="description" 
-          content="Questions about working with Rise2Growth? Learn about specialist certification, pay, hours, and how your story becomes someone else's hope in NYC." 
+          content="Questions about working with Rise2Growth? Learn about specialist certification, pay, hours, and how your story becomes someone else's hope in NY." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth FAQ, specialist questions, certified specialist requirements NYC, support job questions" 
+          content="Rise2Growth FAQ, specialist questions, certified specialist requirements NY, support job questions" 
         />
         <link rel="canonical" href="https://rise2growth.com/faqs" />
         
@@ -82,7 +82,7 @@ const FAQsPage = () => {
               {
                 "@type": "Question",
                 "name": "Where will I work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Community-based settings across NYC: homes, parks, facilities, community centers. You'll meet people where they are." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Community-based settings across NY: homes, parks, facilities, community centers. You'll meet people where they are." }
               },
               {
                 "@type": "Question",

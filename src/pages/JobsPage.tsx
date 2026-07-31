@@ -19,7 +19,7 @@ const whoWereLookingFor = [
   "Adults 18+",
   "Comfortable sharing lived experience",
   "Reliable with strong boundaries",
-  "Ready to travel within NYC",
+  "Ready to travel within NY",
   "Compassionate and grounded",
 ];
 
@@ -36,14 +36,14 @@ const JobsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Specialist Jobs NYC | Rise2Growth Staffing Agency Careers</title>
+        <title>Peer Specialist Jobs NY | Rise2Growth Staffing Agency Careers</title>
         <meta 
           name="description" 
-          content="Rise2Growth is hiring certified peer specialists across NYC. Your story becomes someone else's hope. Apply for meaningful community-based peer support work." 
+          content="Rise2Growth is hiring certified peer specialists across NY. Your story becomes someone else's hope. Apply for meaningful community-based peer support work." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth jobs, peer specialist jobs NYC, certified peer specialist careers, peer support employment NYC, mental health peer jobs" 
+          content="Rise2Growth jobs, peer specialist jobs NY, certified peer specialist careers, peer support employment NY, mental health peer jobs" 
         />
         <link rel="canonical" href="https://rise2growth.com/jobs" />
         
@@ -52,17 +52,17 @@ const JobsPage = () => {
             "@context": "https://schema.org",
             "@type": "JobPosting",
             "title": "Certified Peer Support Specialist",
-            "description": "Rise2Growth is hiring certified peer specialists across NYC. Your story becomes someone else's hope through meaningful community-based work.",
+            "description": "Rise2Growth is hiring certified peer specialists across NY. Your story becomes someone else's hope through meaningful community-based work.",
             "hiringOrganization": {
               "@type": "EmploymentAgency",
               "name": "Rise2Growth",
-              "description": "Staffing agency connecting certified peer specialists with meaningful work across NYC"
+              "description": "Staffing agency connecting certified peer specialists with meaningful work across NY"
             },
             "jobLocation": {
               "@type": "Place",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "New York City",
+                "addressLocality": "New York",
                 "addressRegion": "NY",
                 "addressCountry": "US"
               }
@@ -85,7 +85,7 @@ const JobsPage = () => {
                   Jobs at <span className="text-primary">Rise2Growth</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>We're hiring specialists across NYC.</strong>
+                  <strong>We're hiring specialists across NY.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
                   If you are looking for meaningful community-based work, let's talk.
@@ -197,7 +197,7 @@ const JobsPage = () => {
                   <div className="flex flex-wrap gap-4 mb-6">
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <MapPin className="h-5 w-5" />
-                      <span>All 5 NYC Boroughs</span>
+                      <span>All 5 NY Boroughs</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <Clock className="h-5 w-5" />
