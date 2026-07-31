@@ -8,7 +8,7 @@ import communityWork from "@/assets/community-work.png";
 
 const howItWorks = [
   "You're paired with individuals who need support",
-  "Sessions match their needs (10-20 hours a week)",
+  "Sessions match their needs",
   "Support happens in the community: private homes or facilities, parks, wherever help is needed",
   "You move at their pace",
 ];
@@ -16,7 +16,7 @@ const howItWorks = [
 const whatYoullProvide = [
   "Guidance from someone who has lived it",
   "Help with goals and daily routines",
-  "Navigation of NYC systems",
+  "Navigation of NY systems",
   "Encouragement when life gets heavy",
   "Real connection, not clinical pressure",
 ];
