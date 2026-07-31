@@ -32,43 +32,88 @@ const jobIncludes = [
   "Real connection and mentorship",
 ];
 
+const positions = [
+  {
+    title: "Support Specialist",
+    description:
+      "Provides real connection and mentorship to peers in the community through 1:1 recovery support, group facilitation, and daily life navigation.",
+    location: "All 5 NY Boroughs",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Special Instruction",
+    description:
+      "Provides individualized developmental support and intervention services to young children with developmental delays or disabilities. The position focuses on promoting growth in communication, cognitive, social-emotional, and adaptive skills through evidence-based strategies, child-centered activities, and family collaboration to support each child's development and progress.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Occupational Therapist",
+    description:
+      "The Occupational Therapist evaluates and provides treatment to help patients develop, recover, and maintain the skills needed to perform daily activities and improve independence. The Occupational Therapist creates individualized treatment plans, provides therapeutic interventions, monitors patient progress, and collaborates with families and healthcare professionals to support patient goals and improve quality of life.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Speech Therapist",
+    description:
+      "The Speech Therapist evaluates, diagnoses, and provides treatment to patients with communication, speech, language, voice, and swallowing disorders. The Speech Therapist develops individualized treatment plans, provides therapeutic interventions, monitors patient progress, and collaborates with families and healthcare professionals to support patient goals and improve overall quality of life.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Physical Therapist",
+    description:
+      "The Physical Therapist evaluates patients, develops individualized treatment plans, and provides skilled therapy services to improve mobility, strength, balance, and overall function. This role includes performing therapeutic exercises, monitoring patient progress, educating patients and caregivers, maintaining accurate documentation, and collaborating with healthcare professionals to support patient recovery and independence.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+];
+
 const JobsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Specialist Jobs NY | Rise2Growth Staffing Agency Careers</title>
+        <title>Open Positions NY | Rise2Growth Staffing Agency Careers</title>
         <meta 
           name="description" 
-          content="Rise2Growth is hiring certified peer specialists across NY. Your story becomes someone else's hope. Apply for meaningful community-based peer support work." 
+          content="Rise2Growth is hiring across NY: Support Specialist, Special Instruction, Occupational Therapist, Speech Therapist, and Physical Therapist. Apply today for meaningful work." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth jobs, peer specialist jobs NY, certified peer specialist careers, peer support employment NY, mental health peer jobs" 
+          content="Rise2Growth jobs, support specialist jobs NY, special instruction jobs NY, occupational therapist jobs NY, speech therapist jobs NY, physical therapist jobs NY, healthcare staffing NY" 
         />
         <link rel="canonical" href="https://rise2growth.com/jobs" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "JobPosting",
-            "title": "Certified Peer Support Specialist",
-            "description": "Rise2Growth is hiring certified peer specialists across NY. Your story becomes someone else's hope through meaningful community-based work.",
-            "hiringOrganization": {
-              "@type": "EmploymentAgency",
-              "name": "Rise2Growth",
-              "description": "Staffing agency connecting certified peer specialists with meaningful work across NY"
-            },
-            "jobLocation": {
-              "@type": "Place",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "New York",
-                "addressRegion": "NY",
-                "addressCountry": "US"
-              }
-            },
-            "employmentType": ["FULL_TIME", "PART_TIME"]
-          })}
+          {JSON.stringify(
+            positions.map((position) => ({
+              "@context": "https://schema.org",
+              "@type": "JobPosting",
+              "title": position.title,
+              "description": position.description,
+              "hiringOrganization": {
+                "@type": "EmploymentAgency",
+                "name": "Rise2Growth",
+                "description": "Staffing agency connecting talented individuals with meaningful work across NY"
+              },
+              "jobLocation": {
+                "@type": "Place",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "New York",
+                  "addressRegion": "NY",
+                  "addressCountry": "US"
+                }
+              },
+              "employmentType": ["FULL_TIME", "PART_TIME"]
+            }))
+          )}
         </script>
       </Helmet>
 
@@ -185,38 +230,46 @@ const JobsPage = () => {
             </div>
           </section>
 
-          {/* Job Details */}
+          {/* Open Positions */}
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
-                  <h3 className="text-2xl font-display font-bold text-foreground mb-6">
-                    Support Specialist
-                  </h3>
-                  
-                  <div className="flex flex-wrap gap-4 mb-6">
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <MapPin className="h-5 w-5" />
-                      <span>All 5 NY Boroughs</span>
+              <div className="max-w-6xl mx-auto">
+                <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
+                  Open Positions
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {positions.map((position) => (
+                    <div key={position.title} className="bg-card rounded-xl p-8 shadow-lg border border-border flex flex-col">
+                      <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+                        {position.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-6 flex-grow">
+                        {position.description}
+                      </p>
+                      <div className="flex flex-wrap gap-4 mb-6">
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <MapPin className="h-5 w-5" />
+                          <span>{position.location}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Clock className="h-5 w-5" />
+                          <span>{position.schedule}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Briefcase className="h-5 w-5" />
+                          <span>{position.type}</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-4">
+                        <Button size="lg" asChild>
+                          <Link to="/contact">Apply Now</Link>
+                        </Button>
+                        <Button size="lg" variant="secondary" asChild>
+                          <Link to="/faqs">Read FAQs</Link>
+                        </Button>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <Clock className="h-5 w-5" />
-                      <span>Flexible Schedule</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <Briefcase className="h-5 w-5" />
-                      <span>Full-Time / Part-Time</span>
-                    </div>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-4">
-                    <Button size="lg" asChild>
-                      <Link to="/contact">Apply Now</Link>
-                    </Button>
-                    <Button size="lg" variant="secondary" asChild>
-                      <Link to="/faqs">Read FAQs</Link>
-                    </Button>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
