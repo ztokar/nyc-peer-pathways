@@ -32,6 +32,49 @@ const jobIncludes = [
   "Real connection and mentorship",
 ];
 
+const positions = [
+  {
+    title: "Support Specialist",
+    description:
+      "Provides real connection and mentorship to peers in the community through 1:1 recovery support, group facilitation, and daily life navigation.",
+    location: "All 5 NY Boroughs",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Special Instruction",
+    description:
+      "Provides individualized developmental support and intervention services to young children with developmental delays or disabilities. The position focuses on promoting growth in communication, cognitive, social-emotional, and adaptive skills through evidence-based strategies, child-centered activities, and family collaboration to support each child's development and progress.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Occupational Therapist",
+    description:
+      "The Occupational Therapist evaluates and provides treatment to help patients develop, recover, and maintain the skills needed to perform daily activities and improve independence. The Occupational Therapist creates individualized treatment plans, provides therapeutic interventions, monitors patient progress, and collaborates with families and healthcare professionals to support patient goals and improve quality of life.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Speech Therapist",
+    description:
+      "The Speech Therapist evaluates, diagnoses, and provides treatment to patients with communication, speech, language, voice, and swallowing disorders. The Speech Therapist develops individualized treatment plans, provides therapeutic interventions, monitors patient progress, and collaborates with families and healthcare professionals to support patient goals and improve overall quality of life.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+  {
+    title: "Physical Therapist",
+    description:
+      "The Physical Therapist evaluates patients, develops individualized treatment plans, and provides skilled therapy services to improve mobility, strength, balance, and overall function. This role includes performing therapeutic exercises, monitoring patient progress, educating patients and caregivers, maintaining accurate documentation, and collaborating with healthcare professionals to support patient recovery and independence.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
+];
+
 const JobsPage = () => {
   return (
     <>
