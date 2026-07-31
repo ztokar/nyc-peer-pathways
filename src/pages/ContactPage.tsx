@@ -104,7 +104,7 @@ const ContactPage = () => {
                       </div>
                     </div>
                   </div>
-
+                </div>
 
                 {/* Contact Form */}
                 <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
