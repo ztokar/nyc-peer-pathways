@@ -230,38 +230,46 @@ const JobsPage = () => {
             </div>
           </section>
 
-          {/* Job Details */}
+          {/* Open Positions */}
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
-                  <h3 className="text-2xl font-display font-bold text-foreground mb-6">
-                    Support Specialist
-                  </h3>
-                  
-                  <div className="flex flex-wrap gap-4 mb-6">
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <MapPin className="h-5 w-5" />
-                      <span>All 5 NY Boroughs</span>
+              <div className="max-w-6xl mx-auto">
+                <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
+                  Open Positions
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {positions.map((position) => (
+                    <div key={position.title} className="bg-card rounded-xl p-8 shadow-lg border border-border flex flex-col">
+                      <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+                        {position.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-6 flex-grow">
+                        {position.description}
+                      </p>
+                      <div className="flex flex-wrap gap-4 mb-6">
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <MapPin className="h-5 w-5" />
+                          <span>{position.location}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Clock className="h-5 w-5" />
+                          <span>{position.schedule}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Briefcase className="h-5 w-5" />
+                          <span>{position.type}</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-4">
+                        <Button size="lg" asChild>
+                          <Link to="/contact">Apply Now</Link>
+                        </Button>
+                        <Button size="lg" variant="secondary" asChild>
+                          <Link to="/faqs">Read FAQs</Link>
+                        </Button>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <Clock className="h-5 w-5" />
-                      <span>Flexible Schedule</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <Briefcase className="h-5 w-5" />
-                      <span>Full-Time / Part-Time</span>
-                    </div>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-4">
-                    <Button size="lg" asChild>
-                      <Link to="/contact">Apply Now</Link>
-                    </Button>
-                    <Button size="lg" variant="secondary" asChild>
-                      <Link to="/faqs">Read FAQs</Link>
-                    </Button>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
