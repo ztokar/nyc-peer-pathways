@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import heroNyc from "@/assets/hero-nyc.png";
 
 const whatYoullDo = [
-  "1:1 peer support",
+  "1:1 support",
   "Group therapy support",
   "Community-based services",
   "Help people navigate NY systems",
@@ -21,12 +21,12 @@ const whyPeerWorkMatters = [
 ];
 
 const whatWereLookingFor = [
-  "NYS Certified Peer Specialists (or CRPA)",
-  "CRPA works too, approved for mental health and substance abuse",
   "Adults 18+",
-  "Compassionate and grounded",
+  "want to help others",
+  "Compassionate and grounded\u00a0",
+  "Ready to make a difference",
   "Ready to work in the community",
-  "Comfortable sharing lived experience",
+  "Motivated and Kind",
 ];
 
 const whyWorkWithUs = [
@@ -98,7 +98,7 @@ const HomePage = () => {
                   Work that actually <span className="text-primary">means something.</span>
                 </h1>
                 <p className="text-xl text-muted-foreground mb-4">
-                  Use your story to help New Yorkers navigate real life.
+                  Use your story to help others navigate real life.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
@@ -145,7 +145,7 @@ const HomePage = () => {
             <div className="container mx-auto px-4 text-center">
               <Heart className="h-12 w-12 mx-auto mb-4 opacity-80" />
               <h2 className="text-3xl font-display font-bold mb-6">
-                Why Peer Work Matters
+                Your Work Matters
               </h2>
               {whyPeerWorkMatters.map((item) => (
                 <p key={item} className="text-xl opacity-90 max-w-2xl mx-auto">
@@ -162,7 +162,7 @@ const HomePage = () => {
                 <h2 className="text-3xl font-display font-bold text-foreground mb-4">
                   What We're Looking For
                 </h2>
-                <p className="text-muted-foreground mb-8">Certified peer specialists who are:</p>
+                <p className="text-muted-foreground mb-8">{"\n"}</p>
                 <ul className="grid sm:grid-cols-2 gap-4">
                   {whatWereLookingFor.map((item) => (
                     <li key={item} className="flex items-center gap-3">
