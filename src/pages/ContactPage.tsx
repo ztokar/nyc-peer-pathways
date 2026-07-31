@@ -105,18 +105,6 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 p-6 bg-primary/10 rounded-xl">
-                    <h3 className="text-lg font-display font-bold text-foreground mb-4">
-                      Not Certified Yet?
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Learn about how to become a certified peer specialist in NYC.
-                    </p>
-                    <Link to="/resources" className="text-primary hover:underline">
-                      Learn About Certification →
-                    </Link>
-                  </div>
-                </div>
 
                 {/* Contact Form */}
                 <div className="bg-card rounded-xl p-8 shadow-lg border border-border">
