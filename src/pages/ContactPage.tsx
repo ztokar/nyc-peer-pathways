@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Phone, Mail, Clock, Briefcase } from "lucide-react";
+import { Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -105,27 +105,6 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  {/* For Peer Specialists */}
-                  <div className="mt-12 p-6 bg-secondary/20 rounded-xl">
-                    <div className="flex items-start gap-3 mb-4">
-                      <Briefcase className="h-6 w-6 text-secondary flex-shrink-0" />
-                      <h3 className="text-lg font-display font-bold text-foreground">
-                        For Peer Specialists
-                      </h3>
-                    </div>
-                    <p className="text-muted-foreground mb-4">
-                      Email us your resume and the NYC areas you can work in.
-                      <br />
-                      We'll get back to you within 2 business days.
-                    </p>
-                    <div className="flex flex-wrap gap-3">
-                      <Link to="/faqs" className="text-primary hover:underline">
-                        Have Questions? Check FAQs →
-                      </Link>
-                    </div>
-                  </div>
-
-                  {/* Learn About Certification */}
                   <div className="mt-6 p-6 bg-primary/10 rounded-xl">
                     <h3 className="text-lg font-display font-bold text-foreground mb-4">
                       Not Certified Yet?
