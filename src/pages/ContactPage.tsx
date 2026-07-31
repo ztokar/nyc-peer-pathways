@@ -13,14 +13,14 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Rise2Growth | Peer Specialist Staffing Agency NYC</title>
+        <title>Contact Rise2Growth | Peer Specialist Staffing Agency NY</title>
         <meta 
           name="description" 
-          content="Contact Rise2Growth to apply for peer specialist jobs in NYC. Your story becomes someone else's hope. We respond within 2 business days." 
+          content="Contact Rise2Growth to apply for peer specialist jobs in NY. Your story becomes someone else's hope. We respond within 2 business days." 
         />
         <meta 
           name="keywords" 
-          content="contact Rise2Growth, apply peer specialist NYC, peer support jobs application, Rise2Growth phone email" 
+          content="contact Rise2Growth, apply peer specialist NY, peer support jobs application, Rise2Growth phone email" 
         />
         <link rel="canonical" href="https://rise2growth.com/contact" />
         

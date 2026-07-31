@@ -18,14 +18,14 @@ const ResourcesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Specialist Resources | Rise2Growth NYC Staffing Agency</title>
+        <title>Peer Specialist Resources | Rise2Growth NY Staffing Agency</title>
         <meta 
           name="description" 
-          content="Resources for becoming a certified peer specialist in NYC. Rise2Growth helps connect peer specialists with meaningful work where your story becomes someone else's hope." 
+          content="Resources for becoming a certified peer specialist in NY. Rise2Growth helps connect peer specialists with meaningful work where your story becomes someone else's hope." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth resources, peer specialist certification NYC, NYS peer certification, peer support training, how to become peer specialist NYC" 
+          content="Rise2Growth resources, peer specialist certification NY, NYS peer certification, peer support training, how to become peer specialist NY" 
         />
         <link rel="canonical" href="https://rise2growth.com/resources" />
         
@@ -34,7 +34,7 @@ const ResourcesPage = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Peer Specialist Certification Resources",
-            "description": "Resources for becoming a certified peer specialist in NYC",
+            "description": "Resources for becoming a certified peer specialist in NY",
             "publisher": {
               "@type": "EmploymentAgency",
               "name": "Rise2Growth"
@@ -56,7 +56,7 @@ const ResourcesPage = () => {
                   <span className="text-primary">Resources</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  <strong>Everything you need to know about becoming a peer specialist in NYC.</strong>
+                  <strong>Everything you need to know about becoming a peer specialist in NY.</strong>
                 </p>
                 <p className="text-muted-foreground mt-4">
                   Whether you're exploring certification or already certified and job-hunting, here's what you need.
@@ -169,21 +169,21 @@ const ResourcesPage = () => {
             </div>
           </section>
 
-          {/* NYC-Specific Resources */}
+          {/* NY-Specific Resources */}
           <section className="py-16 bg-muted">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <div className="flex items-center gap-3 mb-8">
                   <MapPin className="h-8 w-8 text-primary" />
                   <h2 className="text-3xl font-display font-bold text-foreground">
-                    NYC-Specific Resources
+                    NY-Specific Resources
                   </h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-card rounded-xl p-6 border border-border">
                     <h3 className="font-display font-bold text-foreground mb-2">
-                      NYC Department of Health and Mental Hygiene
+                      NY Department of Health and Mental Hygiene
                     </h3>
                     <p className="text-muted-foreground mb-3">
                       Mental health services and peer support information.
@@ -200,7 +200,7 @@ const ResourcesPage = () => {
 
                   <div className="bg-card rounded-xl p-6 border border-border">
                     <h3 className="font-display font-bold text-foreground mb-2">
-                      NAMI NYC (National Alliance on Mental Illness)
+                      NAMI NY (National Alliance on Mental Illness)
                     </h3>
                     <p className="text-muted-foreground mb-3">
                       Peer-led support groups and advocacy.

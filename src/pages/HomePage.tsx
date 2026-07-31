@@ -10,7 +10,7 @@ const whatYoullDo = [
   "1:1 peer support",
   "Group therapy support",
   "Community-based services",
-  "Help people navigate NYC systems",
+  "Help people navigate NY systems",
   "Goal planning and accountability",
 ];
 
@@ -41,19 +41,19 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Rise2Growth | Peer Specialist Staffing Agency NYC - Your Story Becomes Hope</title>
+        <title>Rise2Growth | Peer Specialist Staffing Agency NY - Your Story Becomes Hope</title>
         <meta 
           name="description" 
-          content="Rise2Growth connects certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope. Apply for peer support jobs today." 
+          content="Rise2Growth connects certified peer specialists with meaningful work across NY. Your story becomes someone else's hope. Apply for peer support jobs today." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth, peer specialist staffing agency NYC, peer support specialist jobs NYC, certified peer specialist jobs, mental health peer support NYC, recovery support specialist jobs" 
+          content="Rise2Growth, peer specialist staffing agency NY, peer support specialist jobs NY, certified peer specialist jobs, mental health peer support NY, recovery support specialist jobs" 
         />
         <link rel="canonical" href="https://rise2growth.com/" />
         
-        <meta property="og:title" content="Rise2Growth | Peer Specialist Staffing Agency NYC" />
-        <meta property="og:description" content="Rise2Growth connects certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope." />
+        <meta property="og:title" content="Rise2Growth | Peer Specialist Staffing Agency NY" />
+        <meta property="og:description" content="Rise2Growth connects certified peer specialists with meaningful work across NY. Your story becomes someone else's hope." />
         <meta property="og:type" content="website" />
         
         <script type="application/ld+json">
@@ -61,7 +61,7 @@ const HomePage = () => {
             "@context": "https://schema.org",
             "@type": "EmploymentAgency",
             "name": "Rise2Growth",
-            "description": "Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NYC. Your story becomes someone else's hope.",
+            "description": "Rise2Growth is a staffing agency connecting certified peer specialists with meaningful work across NY. Your story becomes someone else's hope.",
             "telephone": "+1-212-470-7439",
             "email": "info@rise2growth.com",
             "areaServed": [
@@ -86,7 +86,7 @@ const HomePage = () => {
             <div className="absolute inset-0">
               <img 
                 src={heroNyc} 
-                alt="Rise2Growth peer support team in NYC"
+                alt="Rise2Growth peer support team in NY"
                 className="w-full h-full object-cover clip-watermark"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-transparent" />
@@ -102,7 +102,7 @@ const HomePage = () => {
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  Rise2Growth provides specialized staffing solutions for NYC schools, healthcare facilities, and behavioral health programs—delivering specialists and dedicated care professionals right where they are needed most.
+                  Rise2Growth provides specialized staffing solutions for NY schools, healthcare facilities, and behavioral health programs—delivering specialists and dedicated care professionals right where they are needed most.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
