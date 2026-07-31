@@ -79,39 +79,41 @@ const JobsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Peer Specialist Jobs NY | Rise2Growth Staffing Agency Careers</title>
+        <title>Open Positions NY | Rise2Growth Staffing Agency Careers</title>
         <meta 
           name="description" 
-          content="Rise2Growth is hiring certified peer specialists across NY. Your story becomes someone else's hope. Apply for meaningful community-based peer support work." 
+          content="Rise2Growth is hiring across NY: Support Specialist, Special Instruction, Occupational Therapist, Speech Therapist, and Physical Therapist. Apply today for meaningful work." 
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth jobs, peer specialist jobs NY, certified peer specialist careers, peer support employment NY, mental health peer jobs" 
+          content="Rise2Growth jobs, support specialist jobs NY, special instruction jobs NY, occupational therapist jobs NY, speech therapist jobs NY, physical therapist jobs NY, healthcare staffing NY" 
         />
         <link rel="canonical" href="https://rise2growth.com/jobs" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "JobPosting",
-            "title": "Certified Peer Support Specialist",
-            "description": "Rise2Growth is hiring certified peer specialists across NY. Your story becomes someone else's hope through meaningful community-based work.",
-            "hiringOrganization": {
-              "@type": "EmploymentAgency",
-              "name": "Rise2Growth",
-              "description": "Staffing agency connecting certified peer specialists with meaningful work across NY"
-            },
-            "jobLocation": {
-              "@type": "Place",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "New York",
-                "addressRegion": "NY",
-                "addressCountry": "US"
-              }
-            },
-            "employmentType": ["FULL_TIME", "PART_TIME"]
-          })}
+          {JSON.stringify(
+            positions.map((position) => ({
+              "@context": "https://schema.org",
+              "@type": "JobPosting",
+              "title": position.title,
+              "description": position.description,
+              "hiringOrganization": {
+                "@type": "EmploymentAgency",
+                "name": "Rise2Growth",
+                "description": "Staffing agency connecting talented individuals with meaningful work across NY"
+              },
+              "jobLocation": {
+                "@type": "Place",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "New York",
+                  "addressRegion": "NY",
+                  "addressCountry": "US"
+                }
+              },
+              "employmentType": ["FULL_TIME", "PART_TIME"]
+            }))
+          )}
         </script>
       </Helmet>
 
