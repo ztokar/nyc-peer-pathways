@@ -66,14 +66,21 @@ const positions = [
     type: "Full-Time / Part-Time",
   },
   {
-    title: "Physical Therapist",
+    title: "School-Based Board Certified Behavior Analyst (BCBA)",
     description:
-      "The Physical Therapist evaluates patients, develops individualized treatment plans, and provides skilled therapy services to improve mobility, strength, balance, and overall function. This role includes performing therapeutic exercises, monitoring patient progress, educating patients and caregivers, maintaining accurate documentation, and collaborating with healthcare professionals to support patient recovery and independence.",
+      "The School-Based Board Certified Behavior Analyst (BCBA) provides behavioral assessment, consultation, and intervention services to support students within an educational setting. The BCBA evaluates student needs, develops individualized behavior support plans, monitors progress, and provides clinical supervision to behavior support staff, including Registered Behavior Technicians (RBTs). The BCBA collaborates with teachers, administrators, families, related service providers, and the staffing agency to develop effective strategies that promote student success, independence, communication, and positive behavioral outcomes. The BCBA is expected to maintain professional standards, follow school district requirements, and comply with agency, state, and federal regulations.",
     location: "NY",
     schedule: "Flexible Schedule",
     type: "Full-Time / Part-Time",
   },
-];
+  {
+    title: "School-Based Registered Behavior Technician (RBT)",
+    description:
+      "The School-Based Registered Behavior Technician (RBT) provides direct behavioral support services to students within an educational setting under the supervision and direction of a Board Certified Behavior Analyst (BCBA) or other qualified supervisor. The RBT implements individualized behavior intervention plans, supports skill development, collects behavioral data, and assists students in improving communication, social, academic, and daily living skills. The RBT collaborates with teachers, school staff, families, supervisors, and the staffing agency to promote student success and maintain a safe, supportive, and structured learning environment. The RBT is expected to provide services with professionalism, follow school and agency policies, and comply with all applicable regulations and professional standards.",
+    location: "NY",
+    schedule: "Flexible Schedule",
+    type: "Full-Time / Part-Time",
+  },
 
 const JobsPage = () => {
   return (
