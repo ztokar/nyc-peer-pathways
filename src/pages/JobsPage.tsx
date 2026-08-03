@@ -17,7 +17,7 @@ const whatWeOffer = [
 const whoWereLookingFor = [
   "Talented",
   "Adults 18+",
-  "Comfortable sharing lived experience",
+  "Motivated individuals",
   "Reliable with strong boundaries",
   "Ready to travel within NY",
   "Compassionate and grounded",
