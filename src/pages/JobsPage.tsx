@@ -81,6 +81,7 @@ const positions = [
     schedule: "Flexible Schedule",
     type: "Full-Time / Part-Time",
   },
+];
 
 const JobsPage = () => {
   return (
