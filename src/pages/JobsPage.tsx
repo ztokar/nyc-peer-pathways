@@ -139,97 +139,6 @@ const JobsPage = () => {
             </div>
           </section>
 
-          {/* What We Offer */}
-          <section className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-display font-bold text-foreground mb-8">
-                  What We Offer
-                </h2>
-                <ul className="space-y-4">
-                  {whatWeOffer.map((item) => (
-                    <li key={item.text} className="flex items-start gap-3">
-                      <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-lg text-foreground">
-                        <strong>{item.text}</strong> {item.description}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Who We're Looking For */}
-          <section className="py-16 bg-muted">
-            <div className="container mx-auto px-4">
-              <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-                <div>
-                  <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-                    Who We're Looking For
-                  </h2>
-                  <p className="text-muted-foreground mb-8">People who are:</p>
-                  <ul className="space-y-3">
-                    {whoWereLookingFor.map((item) => (
-                      <li key={item} className="flex items-center gap-3">
-                        <div className="h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
-                        <span className="text-foreground">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div>
-                  <img 
-                    src={peerMeeting} 
-                    alt="Rise2Growth peer specialist meeting"
-                    className="w-full rounded-2xl shadow-xl clip-watermark"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* What the Job Includes */}
-          <section className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-display font-bold text-foreground mb-8">
-                  What the Job Includes
-                </h2>
-                <ul className="space-y-3">
-                  {jobIncludes.map((item) => (
-                    <li key={item} className="flex items-center gap-3">
-                      <div className="h-2 w-2 rounded-full bg-primary flex-shrink-0" />
-                      <span className="text-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Why Work With Us */}
-          <section className="py-16 bg-secondary/20">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h2 className="text-3xl font-display font-bold text-foreground mb-6">
-                  Why Work With Us
-                </h2>
-                <p className="text-xl text-muted-foreground mb-2">
-                  Your story has power.
-                </p>
-                <p className="text-xl text-muted-foreground mb-2">
-                  Your experience matters here.
-                </p>
-                <p className="text-lg text-foreground font-medium mt-4">
-                  You'll be supported while you support others.
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* Open Positions */}
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
@@ -275,6 +184,97 @@ const JobsPage = () => {
             </div>
           </section>
 
+          {/* What We Offer */}
+          <section className="py-16 bg-muted">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-display font-bold text-foreground mb-8">
+                  What We Offer
+                </h2>
+                <ul className="space-y-4">
+                  {whatWeOffer.map((item) => (
+                    <li key={item.text} className="flex items-start gap-3">
+                      <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-lg text-foreground">
+                        <strong>{item.text}</strong> {item.description}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Who We're Looking For */}
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div>
+                  <h2 className="text-3xl font-display font-bold text-foreground mb-4">
+                    Who We're Looking For
+                  </h2>
+                  <p className="text-muted-foreground mb-8">People who are:</p>
+                  <ul className="space-y-3">
+                    {whoWereLookingFor.map((item) => (
+                      <li key={item} className="flex items-center gap-3">
+                        <div className="h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
+                        <span className="text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div>
+                  <img 
+                    src={peerMeeting} 
+                    alt="Rise2Growth peer specialist meeting"
+                    className="w-full rounded-2xl shadow-xl clip-watermark"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* What the Job Includes */}
+          <section className="py-16 bg-muted">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-display font-bold text-foreground mb-8">
+                  What the Job Includes
+                </h2>
+                <ul className="space-y-3">
+                  {jobIncludes.map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <div className="h-2 w-2 rounded-full bg-primary flex-shrink-0" />
+                      <span className="text-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Why Work With Us */}
+          <section className="py-16 bg-secondary/20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center">
+                <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h2 className="text-3xl font-display font-bold text-foreground mb-6">
+                  Why Work With Us
+                </h2>
+                <p className="text-xl text-muted-foreground mb-2">
+                  Your story has power.
+                </p>
+                <p className="text-xl text-muted-foreground mb-2">
+                  Your experience matters here.
+                </p>
+                <p className="text-lg text-foreground font-medium mt-4">
+                  You'll be supported while you support others.
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* Apply CTA */}
           <section className="py-16 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
@@ -303,6 +303,7 @@ const JobsPage = () => {
 
         <Footer />
       </div>
+
     </>
   );
 };
