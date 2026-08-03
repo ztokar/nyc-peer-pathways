@@ -94,7 +94,7 @@ const JobsPage = () => {
         />
         <meta 
           name="keywords" 
-          content="Rise2Growth jobs, support specialist jobs NY, special instruction jobs NY, occupational therapist jobs NY, speech therapist jobs NY, physical therapist jobs NY, healthcare staffing NY" 
+          content="Rise2Growth jobs, support specialist jobs NY, special instruction jobs NY, occupational therapist jobs NY, speech therapist jobs NY, physical therapist jobs NY, BCBA jobs NY, RBT jobs NY, healthcare staffing NY" 
         />
         <link rel="canonical" href="https://rise2growth.com/jobs" />
         
