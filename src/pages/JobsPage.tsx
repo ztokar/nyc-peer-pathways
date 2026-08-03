@@ -34,7 +34,7 @@ const jobIncludes = [
 
 const positions = [
   {
-    title: "Support Specialist",
+    title: "Peer Support Specialist",
     description:
       "Provides real connection and mentorship to peers in the community through 1:1 recovery support, group facilitation, and daily life navigation.",
     location: "All 5 NY Boroughs",
