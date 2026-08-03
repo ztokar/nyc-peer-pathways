@@ -90,7 +90,7 @@ const JobsPage = () => {
         <title>Open Positions NY | Rise2Growth Staffing Agency Careers</title>
         <meta 
           name="description" 
-          content="Rise2Growth is hiring across NY: Support Specialist, Special Instruction, Occupational Therapist, Speech Therapist, and Physical Therapist. Apply today for meaningful work." 
+          content="Rise2Growth is hiring across NY: Support Specialist, Special Instruction, Occupational Therapist, Speech Therapist, Physical Therapist, BCBA, and RBT. Apply today for meaningful work." 
         />
         <meta 
           name="keywords" 
