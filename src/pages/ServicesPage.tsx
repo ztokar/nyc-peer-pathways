@@ -232,7 +232,7 @@ const ServicesPage = () => {
                 This Could Be You
               </h2>
               <p className="text-xl opacity-90 mb-8 max-w-xl mx-auto">
-                If you're certified and ready to use your experience to help others, we want to hear from you.
+                If you're ready to help others, we want to hear from you.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
