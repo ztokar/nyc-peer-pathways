@@ -15,9 +15,9 @@ const whatYoullDo = [
 ];
 
 const whyPeerWorkMatters = [
-  "You've been there.",
-  "You know the grind.",
-  "Your experience can help someone else find their footing in this city.",
+  "\n",
+  "\n",
+  "\n",
 ];
 
 const whatWereLookingFor = [
@@ -144,14 +144,9 @@ const HomePage = () => {
           <section className="py-16 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <Heart className="h-12 w-12 mx-auto mb-4 opacity-80" />
-              <h2 className="text-3xl font-display font-bold mb-6">
+              <h2 className="text-3xl font-display font-bold">
                 Your Work Matters
               </h2>
-              {whyPeerWorkMatters.map((item) => (
-                <p key={item} className="text-xl opacity-90 max-w-2xl mx-auto">
-                  {item}
-                </p>
-              ))}
             </div>
           </section>
 
