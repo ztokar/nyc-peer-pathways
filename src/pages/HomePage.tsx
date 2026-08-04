@@ -15,9 +15,9 @@ const whatYoullDo = [
 ];
 
 const whyPeerWorkMatters = [
-  "You've been there.",
-  "You know the grind.",
-  "Your experience can help someone else find their footing in this city.",
+  "\n",
+  "\n",
+  "\n",
 ];
 
 const whatWereLookingFor = [
