@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import teamSupport from "@/assets/team-support.png";
 
 const whatMakesUsDifferent = [
-  { text: "We value your lived experience", description: ": it's not a side note, it's your superpower" },
   { text: "Flexible placements", description: ": community-based work that fits your life" },
   { text: "Supportive culture", description: ": you're not alone in this work" },
   { text: "Competitive pay", description: ": based on your experience" },
