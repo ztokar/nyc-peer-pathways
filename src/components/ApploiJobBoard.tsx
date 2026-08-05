@@ -18,8 +18,7 @@ const ApploiJobBoard = () => (
     srcDoc={srcDoc}
     sandbox="allow-scripts allow-popups allow-forms allow-popups-to-escape-sandbox"
     loading="lazy"
-    className="w-full rounded-xl border border-border bg-card"
-    style={{ height: 800, width: "100%" }}
+    className="w-full h-[900px] md:h-[1200px] rounded-xl border border-border bg-card"
   />
 );
 
