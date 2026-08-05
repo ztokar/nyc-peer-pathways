@@ -189,9 +189,17 @@ const JobsPage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="mt-12">
+                  <h3 className="text-2xl font-display font-bold text-foreground mb-4 text-center">
+                    Apply Through Our Job Board
+                  </h3>
+                  <ApploiJobBoard />
+                </div>
               </div>
             </div>
           </section>
+
 
           {/* What We Offer */}
           <section className="py-16 bg-muted">
