@@ -151,51 +151,56 @@ const JobsPage = () => {
           {/* Open Positions */}
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-6xl mx-auto">
+              <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
                   Open Positions
                 </h2>
 
-                <div className="mb-12">
+                <div className="bg-card rounded-xl border border-border shadow-lg p-6 md:p-8">
                   <h3 className="text-2xl font-display font-bold text-foreground mb-4 text-center">
                     Apply Through Our Job Board
                   </h3>
                   <ApploiJobBoard />
-                </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  {positions.map((position) => (
-                    <div key={position.title} className="bg-card rounded-xl p-8 shadow-lg border border-border flex flex-col">
-                      <h3 className="text-2xl font-display font-bold text-foreground mb-4">
-                        {position.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-6 flex-grow">
-                        {position.description}
-                      </p>
-                      <div className="flex flex-wrap gap-4 mb-6">
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <MapPin className="h-5 w-5" />
-                          <span>{position.location}</span>
+                  <div className="mt-12">
+                    <h4 className="text-xl font-display font-bold text-foreground mb-6 text-center">
+                      Current Opportunities
+                    </h4>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {positions.map((position) => (
+                        <div key={position.title} className="bg-background rounded-xl p-8 shadow-lg border border-border flex flex-col">
+                          <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+                            {position.title}
+                          </h3>
+                          <p className="text-muted-foreground mb-6 flex-grow">
+                            {position.description}
+                          </p>
+                          <div className="flex flex-wrap gap-4 mb-6">
+                            <div className="flex items-center gap-2 text-muted-foreground">
+                              <MapPin className="h-5 w-5" />
+                              <span>{position.location}</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-muted-foreground">
+                              <Clock className="h-5 w-5" />
+                              <span>{position.schedule}</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-muted-foreground">
+                              <Briefcase className="h-5 w-5" />
+                              <span>{position.type}</span>
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap gap-4">
+                            <Button size="lg" asChild>
+                              <Link to="/contact">Apply Now</Link>
+                            </Button>
+                            <Button size="lg" variant="secondary" asChild>
+                              <Link to="/faqs">Read FAQs</Link>
+                            </Button>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <Clock className="h-5 w-5" />
-                          <span>{position.schedule}</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <Briefcase className="h-5 w-5" />
-                          <span>{position.type}</span>
-                        </div>
-                      </div>
-                      <div className="flex flex-wrap gap-4">
-                        <Button size="lg" asChild>
-                          <Link to="/contact">Apply Now</Link>
-                        </Button>
-                        <Button size="lg" variant="secondary" asChild>
-                          <Link to="/faqs">Read FAQs</Link>
-                        </Button>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
