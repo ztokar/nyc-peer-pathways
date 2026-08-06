@@ -7,7 +7,7 @@ const APPLOI_SRCDOC = `<!DOCTYPE html>
     </style>
   </head>
   <body>
-    <script src='https://apploi.link'><\/script>
+    <script src='https://apploi.link/rise2growth-career-page'><\/script>
   </body>
 </html>`;
 
