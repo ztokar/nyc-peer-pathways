@@ -160,9 +160,9 @@ const JobsPage = () => {
                   <ApploiJobBoard />
 
                   <div className="mt-12">
-                    <h4 className="text-xl font-display font-bold text-foreground mb-6 text-center">
-                      Current Opportunities
-                    </h4>
+                    <h2 className="text-3xl font-display font-bold text-foreground mb-6 text-center">
+                      Open Positions
+                    </h2>
                     <div className="grid md:grid-cols-2 gap-6">
                       {positions.map((position) => (
                         <div key={position.title} className="bg-background rounded-xl p-8 shadow-lg border border-border flex flex-col">
