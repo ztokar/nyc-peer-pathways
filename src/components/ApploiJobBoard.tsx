@@ -14,7 +14,7 @@ const APPLOI_SRCDOC = `<!DOCTYPE html>
 const ApploiJobBoard = () => (
   <iframe
     srcDoc={APPLOI_SRCDOC}
-    style={{ width: "100%", height: "900px", border: "none" }}
+    style={{ width: "100%", height: "600px", border: "none" }}
     title="Rise 2 Growth Careers"
     sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
   />
