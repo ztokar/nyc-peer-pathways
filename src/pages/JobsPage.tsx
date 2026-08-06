@@ -153,7 +153,7 @@ const JobsPage = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
-                  Open Positions
+Current Opportunities
                 </h2>
 
                 <div className="bg-card rounded-xl border border-border shadow-lg p-6 md:p-8">
