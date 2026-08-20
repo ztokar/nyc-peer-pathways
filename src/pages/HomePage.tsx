@@ -230,6 +230,11 @@ const HomePage = () => {
                     <span className="text-foreground">RBT 1:1 direct care for children</span>
                   </li>
                 </ul>
+                <div className="mt-8 text-center">
+                  <Button size="lg" asChild>
+                    <Link to="/contact">Contact Us</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </section>
