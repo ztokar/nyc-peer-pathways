@@ -189,55 +189,6 @@ const HomePage = () => {
             </div>
           </section>
 
-          {/* Our Services */}
-          <section className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
-                  Our Services
-                </h2>
-                <ul className="grid sm:grid-cols-2 gap-4">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Community Peer Support</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Pediatric Therapy Services</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Speech Therapy (SLP)</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Occupational Therapy (OT)</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Physical Therapy (PT)</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Applied Behavior Analysis (ABA) Therapy</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">BCBA assessments</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">RBT 1:1 direct care for children</span>
-                  </li>
-                </ul>
-                <div className="mt-8 text-center">
-                  <Button size="lg" asChild>
-                    <Link to="/contact">Contact Us</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* Ready to Make an Impact CTA */}
           <section className="py-16 bg-secondary text-secondary-foreground">
