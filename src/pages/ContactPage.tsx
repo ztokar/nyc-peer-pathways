@@ -185,7 +185,7 @@ const ContactPage = () => {
                       <Textarea 
                         id="message" 
                         name="message"
-                        placeholder="Tell us about yourself and the NY areas you can work in..."
+                        placeholder="Your message"
                         rows={4}
                         required
                       />
