@@ -188,7 +188,7 @@ const AboutPage = () => {
           <section className="py-16 bg-secondary text-secondary-foreground">
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl font-display font-bold mb-6">
-                Ready to Join Our Team?
+                {" "}
               </h2>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="outline" className="bg-background text-foreground hover:bg-background/90" asChild>
