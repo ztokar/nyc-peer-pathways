@@ -185,7 +185,7 @@ const ContactPage = () => {
                       <Textarea 
                         id="message" 
                         name="message"
-                        placeholder="Your message"
+                        placeholder=""
                         rows={4}
                         required
                       />
